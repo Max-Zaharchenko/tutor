@@ -22,39 +22,45 @@
                     </div>
                 </div>
             </div>
+            <div class="col-md-12">
+                <blockquote class="blockquote text-center">
+                    <p class="lead">Все хотят купить Rolls Royce, а я хочу купить компанию Rolls Royce.</p>
+                    <footer class="blockquote-footer"><cite title="Source Title">Zack Shatrov</cite></footer>
+                </blockquote>
+            </div>
             <div class="col-md-4">
                 <div class="card mb-3">
                     <div class="card-body text-dark">
-                        <h5 class="card-title">Dark card title</h5>
+                        <h5 class="card-title"><a href="#">Feature title 1</a></h5>
                         <p class="card-text">
                             Some quick example text to build on the card title and make up the bulk of the card's content.
                             Some quick example text to build on the card title and make up the bulk of the card's content.
+                            Some quick example text to build on the card title and make up the bulk of the card's content.
                         </p>
-                        <a href="{{ route('register') }}" class="btn btn-block btn-outline-secondary">Start Learning</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="card mb-3">
                     <div class="card-body text-dark">
-                        <h5 class="card-title">Dark card title</h5>
+                        <h5 class="card-title"><a href="#">Feature title 2</a></h5>
                         <p class="card-text">
                             Some quick example text to build on the card title and make up the bulk of the card's content.
                             Some quick example text to build on the card title and make up the bulk of the card's content.
+                            Some quick example text to build on the card title and make up the bulk of the card's content.
                         </p>
-                        <a href="{{ route('register') }}" class="btn btn-block btn-outline-secondary">Start Learning</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="card mb-3">
                     <div class="card-body text-dark">
-                        <h5 class="card-title">Dark card title</h5>
+                        <h5 class="card-title"><a href="#">Feature title 3</a></h5>
                         <p class="card-text">
                             Some quick example text to build on the card title and make up the bulk of the card's content.
                             Some quick example text to build on the card title and make up the bulk of the card's content.
+                            Some quick example text to build on the card title and make up the bulk of the card's content.
                         </p>
-                        <a href="{{ route('register') }}" class="btn btn-block btn-outline-secondary">Start Learning</a>
                     </div>
                 </div>
             </div>

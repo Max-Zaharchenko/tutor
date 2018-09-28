@@ -15,4 +15,13 @@ Route::get('/', 'Client\Index\IndexController@index');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::group(['middleware' => 'auth'], function () {
+    Route::get('/home', 'HomeController@index')->name('home');
+
+    // Courses
+    Route::get('/courses', 'Courses\CoursesController@index')->name('courses.index');
+    Route::get('/courses/{course}', 'Courses\CoursesController@show')->name('courses.show');
+
+    // Lessons
+    Route::get('/courses/{course}/lessons/{lesson}', 'Courses\LessonsController@show')->name('lessons.show');
+});
