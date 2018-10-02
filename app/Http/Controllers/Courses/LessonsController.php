@@ -8,6 +8,11 @@ use App\Models\Lesson;
 
 class LessonsController extends Controller
 {
+    public function __construct()
+    {
+        view()->share('active', 'courses');
+    }
+
     public function show(Course $course, Lesson $lesson)
     {
         $this->authorize('owns', [$course, $lesson]);

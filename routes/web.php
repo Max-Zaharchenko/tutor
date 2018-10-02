@@ -24,4 +24,7 @@ Route::group(['middleware' => 'auth'], function () {
 
     // Lessons
     Route::get('/courses/{course}/lessons/{lesson}', 'Courses\LessonsController@show')->name('lessons.show');
+
+    // Practice
+    Route::get('/practice', 'Practice\PracticeController@index')->name('practice.index');
 });

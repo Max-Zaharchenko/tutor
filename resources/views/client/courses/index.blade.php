@@ -22,7 +22,9 @@
                                     {{--<div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>--}}
                                 {{--</div>--}}
                                 {{--<br>--}}
-                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text">
+                                    Сайт рыбатекст поможет дизайнеру, верстальщику сгенерировать несколько абзацев более менее осмысленного текста.
+                                </p>
                             </div>
                         </div>
                     @endforeach

@@ -47,12 +47,12 @@
                         </a>
 
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="{{ route('home') }}">Home</a>
+                            <a class="dropdown-item" href="{{ route('home') }}">Дом</a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="{{ route('logout') }}"
                                onclick="event.preventDefault();
                                                  document.getElementById('logout-form').submit();">
-                                {{ __('Logout') }}
+                                Выйти
                             </a>
 
                             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
@@ -72,11 +72,13 @@
                     <ul class="list-group">
                         <a href="{{ route('home') }}" class="list-group-item {{ isset($active) && $active == 'dashboard' ? 'active' : '' }}">Дом</a>
                         <a href="{{ route('courses.index') }}" class="list-group-item {{ isset($active) && $active == 'courses' ? 'active' : '' }}">Курсы</a>
-                        <a href="#" class="list-group-item">Ha cвязи</a>
-                        <a href="#" class="list-group-item">Спок</a>
+                        <a href="{{ route('practice.index') }}" class="list-group-item {{ isset($active) && $active == 'practice' ? 'active' : '' }}">Практика</a>
+                        <a href="#" class="list-group-item">Тренироки</a>
                         <a href="#" class="list-group-item">Помощь</a>
-                        <a href="#" class="list-group-item">Payment</a>
                     </ul>
+                    <div class="alert alert-success" role="alert" style="margin-top: 5px;">
+                        Завтра в 13:50 у тебя дзвонок с Заком.
+                    </div>
                 </div>
                 <div class="col-md-9">
                     @yield('content')

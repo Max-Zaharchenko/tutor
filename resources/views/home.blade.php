@@ -1,17 +1,19 @@
 @extends('layouts.dashboard')
 
 @section('content')
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item active" aria-current="page">Дом</li>
+        </ol>
+    </nav>
     <div class="card">
-        <div class="card-header">Дневник</div>
-
         <div class="card-body">
-            @if (session('status'))
-                <div class="alert alert-success" role="alert">
-                    {{ session('status') }}
+            <div class="row">
+                <div class="col-md-8"></div>
+                <div class="col-md-4">
+                    <p class="lead">Текущий уровень <span class="badge badge-success float-right">C1</span></p>
                 </div>
-            @endif
-
-            You are logged in!
+            </div>
         </div>
     </div>
 @endsection
