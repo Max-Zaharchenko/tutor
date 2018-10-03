@@ -14,9 +14,11 @@
     </nav>
     <div class="card">
         <div class="card-body">
-            <iframe src="https://player.vimeo.com/video/76979871" width="100%" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            <video width="770" height="360" controls controlsList="nodownload" webkitallowfullscreen mozallowfullscreen allowfullscreen poster="PATH-TO-STILL-IMAGE">
+                <source src="{{ $lesson->getAttribute('video_url') }}" type="video/mp4">
+            </video>
             <hr>
-            <p class="lead text-muted">{{ $course->description }}</p>
+            <p class="lead text-muted">{{ $lesson->description }}</p>
         </div>
     </div>
 @endsection

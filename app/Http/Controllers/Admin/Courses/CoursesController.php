@@ -48,4 +48,12 @@ class CoursesController extends Controller
         return redirect()
             ->route('admin.courses.index');
     }
+
+    public function show(Course $course)
+    {
+        return view('admin.courses.show', [
+            'course'  => $course,
+            'lessons' => $course->lessons,
+        ]);
+    }
 }
