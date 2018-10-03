@@ -11,12 +11,21 @@ class User extends Authenticatable
     use Notifiable;
 
     /**
+     * The model's attributes.
+     *
+     * @var array
+     */
+    protected $attributes = [
+        'role' => 'student'
+    ];
+
+    /**
      * The attributes that are mass assignable.
      *
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'role', 'name', 'email', 'password',
     ];
 
     /**
