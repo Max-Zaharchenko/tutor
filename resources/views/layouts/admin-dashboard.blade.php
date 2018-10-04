@@ -72,6 +72,7 @@
                 <div class="col-md-3">
                     <ul class="list-group">
                         <a href="{{ route('admin.dashboard.index') }}" class="list-group-item {{ isset($active) && $active == 'dashboard' ? 'active' : '' }}">Dashboard</a>
+                        <a href="{{ route('admin.students.index') }}" class="list-group-item {{ isset($active) && $active == 'students' ? 'active' : '' }}">Студенты</a>
                         <a href="{{ route('admin.courses.index') }}" class="list-group-item {{ isset($active) && $active == 'courses' ? 'active' : '' }}">Курсы</a>
                     </ul>
                 </div>
