@@ -18,8 +18,9 @@ class LessonsController extends Controller
         $this->authorize('owns', [$course, $lesson]);
 
         return view('client.lessons.show', [
-            'course' => $course,
-            'lesson' => $lesson,
+            'course'  => $course,
+            'lessons' => $course->lessons,
+            'lesson'  => $lesson,
         ]);
     }
 }

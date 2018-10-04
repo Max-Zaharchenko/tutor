@@ -12,13 +12,27 @@
             <li class="breadcrumb-item active" aria-current="page">{{ $lesson->title }}</li>
         </ol>
     </nav>
-    <div class="card">
-        <div class="card-body">
-            <video width="770" height="360" controls controlsList="nodownload" webkitallowfullscreen mozallowfullscreen allowfullscreen poster="PATH-TO-STILL-IMAGE">
-                <source src="{{ $lesson->getAttribute('video_url') }}" type="video/mp4">
-            </video>
-            <hr>
-            <p class="lead text-muted">{{ $lesson->description }}</p>
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-body">
+                    <video width="100%" height="280" controls controlsList="nodownload" webkitallowfullscreen mozallowfullscreen allowfullscreen poster="PATH-TO-STILL-IMAGE">
+                        <source src="{{ $lesson->getAttribute('video_url') }}" type="video/mp4">
+                    </video>
+                    <hr>
+                    <p class="lead text-muted">{{ $lesson->description }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <ul class="list-group">
+                @foreach($lessons as $courseLesson)
+                    <a class="list-group-item {{ $lesson->getKey() === $courseLesson->getKey() ? 'active' : '' }}"
+                        href="{{ route('lessons.show', ['course' => $course, 'lesson' => $courseLesson]) }}">
+                        {{ $courseLesson->title }}
+                    </a>
+                @endforeach
+            </ul>
         </div>
     </div>
 @endsection
