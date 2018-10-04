@@ -10,6 +10,7 @@
         <thead>
             <tr>
                 <th>Имя</th>
+                <th>Подписка заканчивается</th>
                 <th>E-Mail</th>
                 <th></th>
             </tr>
@@ -18,6 +19,7 @@
             @foreach($students as $student)
                 <tr>
                     <td>{{ $student->getAttribute('name') }}</td>
+                    <td>{{ $student->getAttribute('trial_ends_at') }}</td>
                     <td>{{ $student->getAttribute('email') }}</td>
                     <td></td>
                 </tr>

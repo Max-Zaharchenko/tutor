@@ -22,3 +22,20 @@ $factory->define(App\Models\User::class, function (Faker $faker) {
         'remember_token' => str_random(10),
     ];
 });
+
+$factory->state(\App\Models\User::class, 'student', function (Faker $faker) {
+    return [
+        'name'  => 'student',
+        'email' => 'student@gmail.com',
+        'role'  => 'student',
+        'trial_ends_at' => now()->addMonth(),
+    ];
+});
+
+$factory->state(\App\Models\User::class, 'admin', function (Faker $faker) {
+    return [
+        'name'  => 'admin',
+        'email' => 'admin@gmail.com',
+        'role'  => 'admin',
+    ];
+});
