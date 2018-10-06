@@ -24,9 +24,10 @@ class CreateLessonRequest extends FormRequest
     public function rules()
     {
         return [
-            'title'       => ['required', 'min:3', 'string', 'unique:courses,title'],
-            'description' => ['required', 'string'],
-            'video'       => ['mimetypes:video/avi,video/mpeg,video/quicktime,video/mp4'],
+            'title'         => ['required', 'min:3', 'string', 'unique:courses,title'],
+            'description'   => ['required', 'string'],
+            'video'         => ['required', 'mimetypes:video/avi,video/mpeg,video/quicktime,video/mp4'],
+            'published_at'  => ['required', 'date'],
         ];
     }
 }
