@@ -8,14 +8,38 @@
         </ol>
     </nav>
     <ul class="list-group">
-        @foreach($courses as $course)
-            <a href="{{ route('admin.courses.show', ['course' => $course]) }}" class="list-group-item list-group-item-action flex-column align-items-start">
-                <div class="d-flex w-100 justify-content-between">
-                    <h5 class="mb-1">{{ $course->title }}</h5>
-                    <small><i class="fa fa-play" aria-hidden="true"></i> {{ $course->lessons_count }} уроков</small>
-                </div>
-                <p class="mb-1">{{ $course->description }}</p>
-            </a>
+        @foreach($courses->chunk(2) as $courses)
+            @if($loop->index >= 1)
+                <br>
+            @endif
+            <div class="card-deck">
+                @foreach($courses as $course)
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <a href="{{ route('admin.courses.show', ['course' => $course->getKey()]) }}">{{ $course->title }}</a>
+                                @if($course->isPublished())
+                                    <span class="badge badge-success float-right">Активный</span>
+                                @else
+                                    <span class="badge badge-secondary float-right">Пауза</span>
+                                @endif
+                            </h5>
+                            <hr>
+                            <p class="card-text">
+                                @foreach($course->lessons as $lesson)
+                                    <small>
+                                        <b>{{ $loop->index + 1 }}.</b>
+                                        <b>{{ $lesson->title }}</b>
+                                        @if(! $lesson->isPublished() && $lesson->published_at)
+                                            <small>Опубликируется: {{ $lesson->published_at->format('jS \o\f F, g:i:s a') }}</small>
+                                        @endif
+                                    </small><br>
+                                @endforeach
+                            </p>
+                        </div>
+                    </div>
+                @endforeach
+            </div>
         @endforeach
     </ul>
 @endsection

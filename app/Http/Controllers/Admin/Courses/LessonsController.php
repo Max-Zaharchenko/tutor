@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\Admin\Courses\CreateLessonRequest;
 use App\Interactions\Lessons\CreateLessonInteraction;
 use App\Models\Course;
+use Carbon\Carbon;
 use Illuminate\Support\Facades\Storage;
 
 class LessonsController extends Controller
@@ -31,9 +32,10 @@ class LessonsController extends Controller
         $this->interact(CreateLessonInteraction::class, [
             'course' => $course,
             'data' => [
-                'title'       => $request->get('title'),
-                'description' => $request->get('description'),
-                'video_url'   => $videoUrl,
+                'title'        => $request->get('title'),
+                'description'  => $request->get('description'),
+                'published_at' => Carbon::parse($request->get('published_at')),
+                'video_url'    => $videoUrl,
             ]
         ]);
 

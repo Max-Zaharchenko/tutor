@@ -18,7 +18,7 @@ class CoursesController extends Controller
     public function index()
     {
         $courses = Course::query()
-                    ->withcount('lessons')
+                    ->with('lessons')
                     ->paginate();
 
         return view('admin.courses.index', [

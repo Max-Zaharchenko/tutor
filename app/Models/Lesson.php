@@ -8,8 +8,17 @@ class Lesson extends Model
 {
     protected $guarded = [];
 
+    protected $dates = [
+        'published_at'
+    ];
+
     public function course()
     {
         return $this->belongsTo(Course::class);
+    }
+
+    public function isPublished()
+    {
+        return $this->getAttribute('published_at') !== null && $this->getAttribute('published_at') < now();
     }
 }

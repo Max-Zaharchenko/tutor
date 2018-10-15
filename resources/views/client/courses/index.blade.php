@@ -18,10 +18,6 @@
                             <img class="card-img-top" src="{{ $course->getAttribute('image_url') }}" alt="Card image cap">
                             <div class="card-body">
                                 <h5 class="card-title"><a href="{{ route('courses.show', ['course' => $course->getKey()]) }}">{{ $course->title }}</a></h5>
-                                {{--<div class="progress">--}}
-                                    {{--<div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>--}}
-                                {{--</div>--}}
-                                {{--<br>--}}
                                 <p class="card-text">
                                     {{ $course->description }}
                                 </p>

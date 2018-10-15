@@ -19,6 +19,7 @@ class CreateLessonsTable extends Migration
             $table->string('title');
             $table->text('description');
             $table->string('video_url');
+            $table->timestamp('published_at')->nullable();
             $table->timestamps();
 
             $table->foreign('course_id')
