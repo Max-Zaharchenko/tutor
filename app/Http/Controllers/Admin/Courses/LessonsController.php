@@ -41,7 +41,7 @@ class LessonsController extends Controller
         ]);
 
         return redirect(route('admin.courses.show', [
-            'course' => $course,
+            'course' => $course->slug,
         ]));
     }
 }
