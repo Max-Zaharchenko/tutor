@@ -17,7 +17,7 @@
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title">
-                                <a href="{{ route('admin.courses.show', ['course' => $course->getKey()]) }}">{{ $course->title }}</a>
+                                <a href="{{ route('admin.courses.show', ['courseSlug' => $course->slug]) }}">{{ $course->title }}</a>
                                 @if($course->isPublished())
                                     <span class="badge badge-success float-right">Активный</span>
                                 @else

@@ -39,6 +39,7 @@ class CoursesController extends Controller
 
         $this->interact(CreateCourseInteraction::class, [
             'data' => [
+                'slug'        => str_slug($request->get('title')),
                 'title'       => $request->get('title'),
                 'description' => $request->get('description'),
                 'image_url'   => $imageUrl,

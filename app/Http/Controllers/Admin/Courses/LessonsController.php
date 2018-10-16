@@ -32,6 +32,7 @@ class LessonsController extends Controller
         $this->interact(CreateLessonInteraction::class, [
             'course' => $course,
             'data' => [
+                'slug'         => str_slug($request->get('title')),
                 'title'        => $request->get('title'),
                 'description'  => $request->get('description'),
                 'published_at' => Carbon::parse($request->get('published_at')),
