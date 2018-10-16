@@ -2,6 +2,8 @@
 
 namespace App\Providers;
 
+use App\Models\Course;
+use App\Models\Lesson;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
 
@@ -23,7 +25,13 @@ class RouteServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        Route::bind('courseSlug', function ($value) {
+            return Course::bySlug($value)->firstOrFail();
+        });
+
+        Route::bind('lessonSlug', function ($value, $q) {
+            return Lesson::byCourseId($q->parameter('courseSlug')->getKey())->bySlug($value)->firstOrFail();
+        });
 
         parent::boot();
     }

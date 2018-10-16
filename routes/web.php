@@ -20,10 +20,10 @@ Route::group(['middleware' => 'auth'], function () {
 
     // Courses
     Route::get('/courses', 'Courses\CoursesController@index')->name('courses.index');
-    Route::get('/courses/{course}', 'Courses\CoursesController@show')->name('courses.show');
+    Route::get('/courses/{courseSlug}', 'Courses\CoursesController@show')->name('courses.show');
 
     // Lessons
-    Route::get('/courses/{course}/lessons/{lesson}', 'Courses\LessonsController@show')->name('lessons.show');
+    Route::get('/courses/{courseSlug}/lessons/{lessonSlug}', 'Courses\LessonsController@show')->name('lessons.show');
 
     // Practice
     Route::get('/practice', 'Practice\PracticeController@index')->name('practice.index');

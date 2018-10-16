@@ -17,6 +17,11 @@ class Course extends Model
         return $query->whereNotNull('published_at');
     }
 
+    public function scopeBySlug($query, $value)
+    {
+        return $query->where('slug', $value);
+    }
+
     public function lessons()
     {
         return $this->hasMany(Lesson::class);

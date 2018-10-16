@@ -3,8 +3,10 @@
 use Faker\Generator as Faker;
 
 $factory->define(\App\Models\Course::class, function (Faker $faker) {
+    $title = $faker->word;
     return [
-        'title' => $faker->word,
+        'slug' => str_slug($title),
+        'title' => $title,
         'description' => $faker->sentences(4, true),
         'image_url' => $faker->imageUrl(266, 100),
     ];

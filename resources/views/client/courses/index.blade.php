@@ -17,7 +17,7 @@
                         <div class="card">
                             <img class="card-img-top" src="{{ $course->getAttribute('image_url') }}" alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title"><a href="{{ route('courses.show', ['course' => $course->getKey()]) }}">{{ $course->title }}</a></h5>
+                                <h5 class="card-title"><a href="{{ route('courses.show', ['course' => $course->slug]) }}">{{ $course->title }}</a></h5>
                                 <p class="card-text">
                                     {{ $course->description }}
                                 </p>

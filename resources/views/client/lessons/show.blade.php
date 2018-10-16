@@ -8,7 +8,7 @@
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="{{ route('courses.index') }}">Курсы</a></li>
-            <li class="breadcrumb-item active"><a href="{{ route('courses.show', ['course' => $course]) }}">{{ $course->title }}</a></li>
+            <li class="breadcrumb-item active"><a href="{{ route('courses.show', ['course' => $course->slug]) }}">{{ $course->title }}</a></li>
             <li class="breadcrumb-item active" aria-current="page">{{ $lesson->title }}</li>
         </ol>
     </nav>
@@ -28,7 +28,7 @@
             <ul class="list-group">
                 @foreach($lessons as $courseLesson)
                     <a class="list-group-item {{ $lesson->getKey() === $courseLesson->getKey() ? 'active' : '' }}"
-                        href="{{ route('lessons.show', ['course' => $course, 'lesson' => $courseLesson]) }}">
+                        href="{{ route('lessons.show', ['course' => $course->slug, 'lesson' => $courseLesson->slug]) }}">
                         {{ $courseLesson->title }}
                     </a>
                 @endforeach

@@ -21,4 +21,15 @@ class Lesson extends Model
     {
         return $this->getAttribute('published_at') !== null && $this->getAttribute('published_at') < now();
     }
+
+    public function scopeByCourseId($query, $value)
+    {
+        return $query->where('course_id', $value);
+    }
+
+    public function scopeBySlug($query, $value)
+    {
+        return $query->where('slug', $value);
+    }
+
 }
