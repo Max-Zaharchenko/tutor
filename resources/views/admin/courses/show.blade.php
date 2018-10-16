@@ -6,7 +6,7 @@
             <li class="breadcrumb-item"><a href="{{ route('admin.courses.index') }}">Курсы</a></li>
             <li class="breadcrumb-item active" aria-current="page">{{ $course->title }}</li>
 
-            <a href="{{ route('admin.lessons.create', ['course' => $course]) }}" class="ml-auto">Создать Новый Урок</a>
+            <a href="{{ route('admin.lessons.create', ['course' => $course->slug]) }}" class="ml-auto">Создать Новый Урок</a>
         </ol>
     </nav>
     <div class="card">
