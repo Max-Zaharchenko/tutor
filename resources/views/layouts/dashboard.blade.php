@@ -72,13 +72,14 @@
                     <ul class="list-group">
                         <a href="{{ route('home') }}" class="list-group-item {{ isset($active) && $active == 'dashboard' ? 'active' : '' }}">Дом</a>
                         <a href="{{ route('courses.index') }}" class="list-group-item {{ isset($active) && $active == 'courses' ? 'active' : '' }}">Курсы</a>
-                        <a href="{{ route('practice.index') }}" class="list-group-item {{ isset($active) && $active == 'practice' ? 'active' : '' }}">Практика</a>
-                        <a href="#" class="list-group-item">Тренироки</a>
-                        <a href="#" class="list-group-item">Помощь</a>
+                        <a href="#" class="list-group-item d-flex justify-content-between align-items-center">
+                            Практика <span class="badge badge-secondary badge-pill">Скоро</span></a>
+                        <a href="#" class="list-group-item d-flex justify-content-between align-items-center">
+                            Вокебулари <span class="badge badge-secondary badge-pill">Скоро</span></a>
                     </ul>
-                    <div class="alert alert-success" role="alert" style="margin-top: 5px;">
-                        Завтра в 13:50 у тебя дзвонок с Заком.
-                    </div>
+                    {{--<div class="alert alert-success" role="alert" style="margin-top: 5px;">--}}
+                        {{--Завтра в 13:50 у тебя дзвонок с Заком.--}}
+                    {{--</div>--}}
                 </div>
                 <div class="col-md-9">
                     @yield('content')
