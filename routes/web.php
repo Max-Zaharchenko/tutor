@@ -13,8 +13,7 @@
 
 Route::get('/', 'Client\Index\IndexController@index')->name('index.index');
 
-Route::get('/login', 'Auth\LoginController@showLoginForm')->name('login');
-Route::post('/login', 'Auth\LoginController@login');
+\Illuminate\Support\Facades\Auth::routes(['register' => false]);
 
 Route::group(['middleware' => 'auth'], function () {
     Route::get('/home', 'HomeController@index')->name('home');
