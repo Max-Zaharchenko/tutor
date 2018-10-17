@@ -9,9 +9,11 @@
     <div class="card">
         <div class="card-body">
             <div class="row">
-                <div class="col-md-8"></div>
-                <div class="col-md-4">
-                    <p class="lead">Текущий уровень <span class="badge badge-success float-right">C1</span></p>
+                <div class="col-md-12">
+                    <blockquote class="blockquote text-center">
+                        <h2>London is the capital of Great Britain</h2>
+                        <p class="lead text-muted">Страница в разработке</p>
+                    </blockquote>
                 </div>
             </div>
         </div>
