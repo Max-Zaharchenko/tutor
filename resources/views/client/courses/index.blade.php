@@ -8,7 +8,7 @@
     </nav>
     <div class="card">
         <div class="card-body">
-            @foreach($courses->chunk(2) as $courses)
+            @forelse($courses->chunk(2) as $courses)
                 @if($loop->index >= 1)
                 <br>
                 @endif
@@ -25,7 +25,9 @@
                         </div>
                     @endforeach
                 </div>
-            @endforeach
+            @empty
+                <p class="lead text-center">Скоро, скоро Зак добавит новые курсы!</p>
+            @endforelse
         </div>
     </div>
 @endsection
