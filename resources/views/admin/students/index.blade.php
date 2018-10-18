@@ -4,8 +4,26 @@
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item active" aria-current="page">Студенты</li>
+            <a href="#" data-toggle="modal" data-target="#exampleModal" class="ml-auto">Пригласить Студента</a>
         </ol>
     </nav>
+    <div class="justify-content-center row">
+        <div class="col-md-12">
+            <form method="POST" action="{{ route('admin.students.store') }}">
+                {{ csrf_field() }}
+                <div class="form-group row">
+                    <label for="email" class="col-sm-2 col-form-label">Email</label>
+                    <div class="col-sm-8">
+                        <input type="email" name="email" class="form-control" id="email" placeholder="Email">
+                    </div>
+                    <div class="col-sm-2">
+                        <button class="btn btn-success">Пригласить</button>
+                    </div>
+                </div>
+                @include('partials.errors')
+            </form>
+        </div>
+    </div>
     <table class="table">
         <thead>
             <tr>

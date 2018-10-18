@@ -4,6 +4,7 @@ $router->get('/', 'Dashboard\DashboardController@index')->name('admin.dashboard.
 
 // Students
 $router->get('/students', 'Students\StudentsController@index')->name('admin.students.index');
+$router->post('/students', 'Students\StudentsController@store')->name('admin.students.store');
 
 // Courses
 $router->get('/courses', 'Courses\CoursesController@index')->name('admin.courses.index');
