@@ -15,7 +15,7 @@
                 <div class="card-deck">
                     @foreach($courses as $course)
                         <div class="card">
-                            <img class="card-img-top" src="{{ $course->getAttribute('image_url') }}" alt="Card image cap">
+                            <a href="{{ route('courses.show', ['course' => $course->slug]) }}"><img class="card-img-top" src="{{ $course->getAttribute('image_url') }}" alt="Card image cap"></a>
                             <div class="card-body">
                                 <h5 class="card-title"><a href="{{ route('courses.show', ['course' => $course->slug]) }}">{{ $course->title }}</a></h5>
                                 <p class="card-text">
