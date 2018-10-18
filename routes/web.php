@@ -11,20 +11,23 @@
 |
 */
 
-Route::get('/', 'Client\Index\IndexController@index')->name('index.index');
-
 \Illuminate\Support\Facades\Auth::routes(['register' => false]);
 
-Route::group(['middleware' => 'auth'], function () {
-    Route::get('/home', 'HomeController@index')->name('home');
+$router->get('/', 'Client\Index\IndexController@index')->name('index.index');
+
+$router->get('/join', 'Client\Students\JoinController@show')->name('client.students.showJoinForm');
+$router->post('/join', 'Client\Students\JoinController@store')->name('client.students.join');
+
+$router->group(['middleware' => 'auth'], function () use ($router) {
+    $router->get('/home', 'HomeController@index')->name('home');
 
     // Courses
-    Route::get('/courses', 'Courses\CoursesController@index')->name('courses.index');
-    Route::get('/courses/{courseSlug}', 'Courses\CoursesController@show')->name('courses.show');
+    $router->get('/courses', 'Courses\CoursesController@index')->name('courses.index');
+    $router->get('/courses/{courseSlug}', 'Courses\CoursesController@show')->name('courses.show');
 
     // Lessons
-    Route::get('/courses/{courseSlug}/lessons/{lessonSlug}', 'Courses\LessonsController@show')->name('lessons.show');
+    $router->get('/courses/{courseSlug}/lessons/{lessonSlug}', 'Courses\LessonsController@show')->name('lessons.show');
 
     // Practice
-    Route::get('/practice', 'Practice\PracticeController@index')->name('practice.index');
+    $router->get('/practice', 'Practice\PracticeController@index')->name('practice.index');
 });
