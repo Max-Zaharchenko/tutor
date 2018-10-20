@@ -7,8 +7,8 @@
 @section('content')
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="{{ route('courses.index') }}">Курсы</a></li>
-            <li class="breadcrumb-item active"><a href="{{ route('courses.show', ['course' => $course->slug]) }}">{{ $course->title }}</a></li>
+            <li class="breadcrumb-item"><a href="{{ route('admin.courses.index') }}">Курсы</a></li>
+            <li class="breadcrumb-item active"><a href="{{ route('admin.courses.show', ['course' => $course->slug]) }}">{{ $course->title }}</a></li>
             <li class="breadcrumb-item active" aria-current="page">{{ $lesson->title }}</li>
         </ol>
     </nav>
@@ -16,9 +16,11 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-body">
-                    <video width="100%" height="280" controls controlsList="nodownload" webkitallowfullscreen mozallowfullscreen allowfullscreen poster="PATH-TO-STILL-IMAGE">
-                        <source src="{{ $lesson->getAttribute('video_url') }}" type="video/mp4">
-                    </video>
+                    {{--<video width="100%" height="280" controls controlsList="nodownload" webkitallowfullscreen mozallowfullscreen allowfullscreen poster="PATH-TO-STILL-IMAGE">--}}
+                        {{--<source src="{{ $lesson->getAttribute('video_url') }}" type="video/mp4">--}}
+                    {{--</video>--}}
+                    <hr>
+                        <lesson-words-component></lesson-words-component>
                     <hr>
                     <p class="lead text-muted">{{ $lesson->description }}</p>
                 </div>
@@ -28,7 +30,7 @@
             <ul class="list-group">
                 @foreach($lessons as $courseLesson)
                     <a class="list-group-item {{ $lesson->getKey() === $courseLesson->getKey() ? 'active' : '' }}"
-                       href="{{ route('lessons.show', ['course' => $course->slug, 'lesson' => $courseLesson->slug]) }}">
+                       href="{{ route('admin.lessons.show', ['course' => $course->slug, 'lesson' => $courseLesson->slug]) }}">
                         {{ $courseLesson->title }}
                     </a>
                 @endforeach

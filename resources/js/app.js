@@ -16,6 +16,7 @@ window.Vue = require('vue');
  */
 
 Vue.component('example-component', require('./components/ExampleComponent.vue'));
+Vue.component('lesson-words-component', require('./components/Admin/Courses/LessonWords.vue'));
 
 const app = new Vue({
     el: '#app'
