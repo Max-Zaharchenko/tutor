@@ -13,6 +13,10 @@
 
 \Illuminate\Support\Facades\Auth::routes(['register' => false]);
 
+$router->get('/mailable', function () {
+    return new \App\Mail\Students\Invite(\App\Models\Invite::first());
+});
+
 $router->get('/', 'Client\Index\IndexController@index')->name('index.index');
 
 $router->get('/join', 'Client\Students\JoinController@show')->name('client.students.showJoinForm');

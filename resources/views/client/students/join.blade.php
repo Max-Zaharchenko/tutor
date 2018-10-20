@@ -5,11 +5,12 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">Присоеденится</div>
+                    <div class="card-header">Регистрация</div>
 
                     <div class="card-body">
                         <form method="POST" action="{{ route('client.students.join') }}">
                             @csrf
+                            <input type="hidden" name="token" value="{{ request()->query->get('token') }}">
 
                             <div class="form-group row">
                                 <label for="name" class="col-md-4 col-form-label text-md-right">Имя</label>
@@ -20,39 +21,6 @@
                                     @if ($errors->has('name'))
                                         <span class="invalid-feedback" role="alert">
                                         <strong>{{ $errors->first('name') }}</strong>
-                                    </span>
-                                    @endif
-                                </div>
-                            </div>
-
-                            <div class="form-group row">
-                                <label for="messenger" class="col-md-4 col-form-label text-md-right">Желаемый мессенджер</label>
-
-                                <div class="col-md-6">
-                                    <select name="messenger" id="messenger" class="form-control{{ $errors->has('messenger') ? ' is-invalid' : '' }}" required>
-                                        <option value="telegram">Telegram</option>
-                                        <option value="whatsapp">Whats App</option>
-                                        <option value="viber">Viber</option>
-                                        <option value="other">Другое</option>
-                                    </select>
-
-                                    @if ($errors->has('messenger'))
-                                        <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('messenger') }}</strong>
-                                    </span>
-                                    @endif
-                                </div>
-                            </div>
-
-                            <div class="form-group row">
-                                <label for="mobile_number" class="col-md-4 col-form-label text-md-right">Номер телефона</label>
-
-                                <div class="col-md-6">
-                                    <input id="mobile_number" type="text" class="form-control{{ $errors->has('mobile_number') ? ' is-invalid' : '' }}" name="mobile_number" value="{{ old('mobile_number', $invite->mobile_number) }}" required>
-
-                                    @if ($errors->has('mobile_number'))
-                                        <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('mobile_number') }}</strong>
                                     </span>
                                     @endif
                                 </div>
@@ -97,7 +65,7 @@
                             <div class="form-group row mb-0">
                                 <div class="col-md-6 offset-md-4">
                                     <button type="submit" class="btn btn-primary">
-                                        Начать изучение
+                                        Поехали
                                     </button>
                                 </div>
                             </div>

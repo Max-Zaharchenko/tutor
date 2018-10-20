@@ -20,6 +20,7 @@ class CreateInvitesTable extends Migration
             $table->string('email')->nullable();
             $table->string('mobile_number')->nullable();
             $table->timestamps();
+            $table->softDeletes();
 
             $table->unique('code');
         });

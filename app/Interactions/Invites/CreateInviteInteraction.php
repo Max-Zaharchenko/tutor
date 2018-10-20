@@ -10,6 +10,6 @@ class CreateInviteInteraction
     {
         $data['code'] = str_random(64);
 
-        Invite::create($data);
+        return Invite::create($data);
     }
 }

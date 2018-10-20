@@ -2,9 +2,11 @@
 
 $router->get('/', 'Dashboard\DashboardController@index')->name('admin.dashboard.index');
 
+// Invites
+$router->post('/invites', 'Students\InvitesController@store')->name('admin.invites.store');
+
 // Students
 $router->get('/students', 'Students\StudentsController@index')->name('admin.students.index');
-$router->post('/students', 'Students\StudentsController@store')->name('admin.students.store');
 
 // Courses
 $router->get('/courses', 'Courses\CoursesController@index')->name('admin.courses.index');
