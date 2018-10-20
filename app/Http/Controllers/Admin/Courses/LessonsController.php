@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\Admin\Courses\CreateLessonRequest;
 use App\Interactions\Lessons\CreateLessonInteraction;
 use App\Models\Course;
+use App\Models\Lesson;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Storage;
 
@@ -43,5 +44,14 @@ class LessonsController extends Controller
         return redirect(route('admin.courses.show', [
             'course' => $course->slug,
         ]));
+    }
+
+    public function show(Course $course, Lesson $lesson)
+    {
+        return view('admin.lessons.show', [
+            'course'  => $course,
+            'lesson'  => $lesson,
+            'lessons' => $course->lessons,
+        ]);
     }
 }

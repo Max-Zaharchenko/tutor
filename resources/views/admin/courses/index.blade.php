@@ -21,21 +21,9 @@
                                 @if($course->isPublished())
                                     <span class="badge badge-success float-right">Активный</span>
                                 @else
-                                    <span class="badge badge-secondary float-right">Пауза</span>
+                                    <span class="badge badge-secondary float-right">Off</span>
                                 @endif
                             </h5>
-                            <hr>
-                            <p class="card-text">
-                                @foreach($course->lessons as $lesson)
-                                    <small>
-                                        <b>{{ $loop->index + 1 }}.</b>
-                                        <b>{{ $lesson->title }}</b>
-                                        @if(! $lesson->isPublished() && $lesson->published_at)
-                                            <small>Опубликируется: {{ $lesson->published_at->format('jS \o\f F, g:i:s a') }}</small>
-                                        @endif
-                                    </small><br>
-                                @endforeach
-                            </p>
                         </div>
                     </div>
                 @endforeach

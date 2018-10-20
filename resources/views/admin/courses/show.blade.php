@@ -15,10 +15,9 @@
             <p class="lead text-muted">{{ $course->description }}</p>
             <ul class="list-group">
                 @foreach($lessons as $lesson)
-                    <a href="{{ route('lessons.show', ['course' => $course->slug, 'lesson' => $lesson->slug]) }}"
+                    <a href="{{ route('admin.lessons.show', ['course' => $course->slug, 'lesson' => $lesson->slug]) }}"
                        class="list-group-item d-flex justify-content-between align-items-center">
                         {{ $lesson->title }}
-                        <span class="badge badge-primary badge-pill">14</span>
                     </a>
                 @endforeach
             </ul>

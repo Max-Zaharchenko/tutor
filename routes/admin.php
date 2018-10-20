@@ -17,3 +17,4 @@ $router->get('/courses/{courseSlug}', 'Courses\CoursesController@show')->name('a
 // Courses Lessons
 $router->get('/courses/{courseSlug}/lessons/create', 'Courses\LessonsController@create')->name('admin.lessons.create');
 $router->post('/courses/{courseSlug}/lessons', 'Courses\LessonsController@store')->name('admin.lessons.store');
+$router->get('/courses/{courseSlug}/lessons/{lessonSlug}', 'Courses\LessonsController@show')->name('admin.lessons.show');
