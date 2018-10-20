@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin\Dashboard;
 
 use App\Http\Controllers\Controller;
+use App\Models\Student;
 
 class DashboardController extends Controller
 {
@@ -13,6 +14,10 @@ class DashboardController extends Controller
 
     public function index()
     {
-        return view('admin.dashboard.index');
+        $studentCount = Student::count();
+
+        return view('admin.dashboard.index', [
+            'studentsCount' => $studentCount,
+        ]);
     }
 }
