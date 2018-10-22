@@ -15,10 +15,15 @@ window.Vue = require('vue');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
+import 'es6-promise/auto';
+
 import Notifications from 'vue-notification';
+import Vuex from 'vuex';
 
 Vue.use(Notifications);
+Vue.use(Vuex);
 
+Vue.component('vocabulary-component', require('./components/Client/Dashboard/VocabularyComponent.vue'));
 Vue.component('lesson-words-component', require('./components/Client/Courses/LessonWords.vue'));
 Vue.component('admin-lesson-words-component', require('./components/Admin/Courses/LessonWords.vue'));
 

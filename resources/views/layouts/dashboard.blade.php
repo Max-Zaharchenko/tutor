@@ -18,6 +18,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
     @yield('styles')
 </head>
@@ -77,6 +78,7 @@
                         <a href="#" class="list-group-item d-flex justify-content-between align-items-center">
                             Вокебулари <span class="badge badge-secondary badge-pill">Скоро</span></a>
                     </ul>
+                    <vocabulary-component></vocabulary-component>
                     {{--<div class="alert alert-success" role="alert" style="margin-top: 5px;">--}}
                         {{--Завтра в 13:50 у тебя дзвонок с Заком.--}}
                     {{--</div>--}}
