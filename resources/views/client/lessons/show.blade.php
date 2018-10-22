@@ -20,6 +20,8 @@
                         <source src="{{ $lesson->getAttribute('video_url') }}" type="video/mp4">
                     </video>
                     <hr>
+                        <lesson-words-component :words="{{ $lesson->words }}"></lesson-words-component>
+                    <hr>
                     <p class="lead text-muted">{{ $lesson->description }}</p>
                 </div>
             </div>

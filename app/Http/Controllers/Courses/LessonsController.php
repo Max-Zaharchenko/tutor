@@ -21,6 +21,7 @@ class LessonsController extends Controller
             'course'  => $course,
             'lessons' => $course->lessons,
             'lesson'  => $lesson,
+            'words'   => $lesson->words,
         ]);
     }
 }
