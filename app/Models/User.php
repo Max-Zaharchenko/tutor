@@ -3,13 +3,13 @@
 namespace App\Models;
 
 use Illuminate\Notifications\Notifiable;
-use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Laravel\Cashier\Billable;
+use Laravel\Passport\HasApiTokens;
 
 class User extends Authenticatable
 {
-    use Billable, Notifiable;
+    use Billable, Notifiable, HasApiTokens;
 
     /**
      * The model's attributes.

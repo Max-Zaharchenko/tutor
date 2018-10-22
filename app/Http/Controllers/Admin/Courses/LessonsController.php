@@ -48,6 +48,8 @@ class LessonsController extends Controller
 
     public function show(Course $course, Lesson $lesson)
     {
+        $lesson->load('words');
+
         return view('admin.lessons.show', [
             'course'  => $course,
             'lesson'  => $lesson,

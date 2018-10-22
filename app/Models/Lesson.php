@@ -17,6 +17,11 @@ class Lesson extends Model
         return $this->belongsTo(Course::class);
     }
 
+    public function words()
+    {
+        return $this->hasMany(Word::class);
+    }
+
     public function isPublished()
     {
         return $this->getAttribute('published_at') !== null && $this->getAttribute('published_at') < now();
@@ -31,5 +36,4 @@ class Lesson extends Model
     {
         return $query->where('slug', $value);
     }
-
 }

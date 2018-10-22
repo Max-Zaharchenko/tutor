@@ -13988,7 +13988,7 @@ module.exports = function normalizeComponent (
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(13);
-module.exports = __webpack_require__(46);
+module.exports = __webpack_require__(47);
 
 
 /***/ }),
@@ -47418,7 +47418,7 @@ var normalizeComponent = __webpack_require__(11)
 /* script */
 var __vue_script__ = __webpack_require__(44)
 /* template */
-var __vue_template__ = __webpack_require__(45)
+var __vue_template__ = __webpack_require__(46)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -47462,7 +47462,7 @@ module.exports = Component.exports
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Models_Admin_Courses_LessonWord__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Models_Admin_Courses_LessonWord__ = __webpack_require__(45);
 //
 //
 //
@@ -47489,23 +47489,48 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
+    props: ['lesson'],
     data: function data() {
         return {
             words: []
         };
     },
+    mounted: function mounted() {
+        this.words = this.lesson.words;
+    },
+
     methods: {
         addWord: function addWord() {
             this.words.push(new __WEBPACK_IMPORTED_MODULE_0__Models_Admin_Courses_LessonWord__["a" /* default */]());
         },
+        deleteWord: function deleteWord(index) {
+            this.words.splice(index, 1);
+        },
         save: function save() {
-            console.log(this.words);
+            axios.put('/api/admin/lessons/' + this.lesson.id + '/words', {
+                words: this.words
+            }).then(function (response) {
+                console.log(response.data);
+            });
         }
     }
 });
 
 /***/ }),
 /* 45 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var LessonWord = function LessonWord() {
+    _classCallCheck(this, LessonWord);
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (LessonWord);
+
+/***/ }),
+/* 46 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -47516,7 +47541,7 @@ var render = function() {
     _c(
       "div",
       { staticClass: "col-md-12" },
-      _vm._l(_vm.words, function(word) {
+      _vm._l(_vm.words, function(word, index) {
         return _c(
           "div",
           { staticClass: "form-row", staticStyle: { "margin-top": "5px" } },
@@ -47551,25 +47576,38 @@ var render = function() {
                   {
                     name: "model",
                     rawName: "v-model",
-                    value: word.translate,
-                    expression: "word.translate"
+                    value: word.translation,
+                    expression: "word.translation"
                   }
                 ],
                 staticClass: "form-control",
                 attrs: { type: "text", placeholder: "Перевод" },
-                domProps: { value: word.translate },
+                domProps: { value: word.translation },
                 on: {
                   input: function($event) {
                     if ($event.target.composing) {
                       return
                     }
-                    _vm.$set(word, "translate", $event.target.value)
+                    _vm.$set(word, "translation", $event.target.value)
                   }
                 }
               })
             ]),
             _vm._v(" "),
-            _vm._m(0, true)
+            _c("div", { staticClass: "col-md-2" }, [
+              _c(
+                "button",
+                {
+                  staticClass: "btn btn-danger",
+                  on: {
+                    click: function($event) {
+                      _vm.deleteWord(index)
+                    }
+                  }
+                },
+                [_vm._v("Удалить")]
+              )
+            ])
           ]
         )
       })
@@ -47594,22 +47632,13 @@ var render = function() {
             staticClass: "btn btn-block btn-outline-secondary",
             on: { click: _vm.save }
           },
-          [_vm._v("Save")]
+          [_vm._v("Сохранить")]
         )
       ]
     )
   ])
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-md-2" }, [
-      _c("button", { staticClass: "btn btn-danger" }, [_vm._v("Удалить")])
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
@@ -47620,27 +47649,10 @@ if (false) {
 }
 
 /***/ }),
-/* 46 */
+/* 47 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 47 */,
-/* 48 */,
-/* 49 */,
-/* 50 */,
-/* 51 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-var LessonWord = function LessonWord() {
-    _classCallCheck(this, LessonWord);
-};
-
-/* harmony default export */ __webpack_exports__["a"] = (LessonWord);
 
 /***/ })
 /******/ ]);
