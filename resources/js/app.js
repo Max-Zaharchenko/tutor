@@ -15,6 +15,10 @@ window.Vue = require('vue');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
+import Notifications from 'vue-notification';
+
+Vue.use(Notifications);
+
 Vue.component('lesson-words-component', require('./components/Client/Courses/LessonWords.vue'));
 Vue.component('admin-lesson-words-component', require('./components/Admin/Courses/LessonWords.vue'));
 
