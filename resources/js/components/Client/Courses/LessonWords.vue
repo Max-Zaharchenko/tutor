@@ -1,7 +1,9 @@
 <template>
     <div class="row">
         <div class="col-md-12">
-            <button class="btn btn-outline-secondary" v-for="word in words" v-on:click="selectWord(word)">{{ word.original }}</button>
+            <button class="btn btn-outline-secondary" v-for="word in words" v-on:click="selectWord(word)" style="margin-right: 5px;">
+                {{ word.original }}
+            </button>
         </div>
     </div>
 </template>
