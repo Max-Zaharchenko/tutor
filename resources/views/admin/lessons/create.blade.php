@@ -25,8 +25,11 @@
                     <textarea name="description" id="description" cols="30" rows="5" class="form-control">{{ old('description') }}</textarea>
                 </div>
                 <div class="form-group">
-                    <label for="published_at" style="color: #555d65;">Дата публикации</label>
-                    <input type="text" name="published_at" id="published_at" value="{{ old('published_at') }}" class="form-control">
+                    <label for="published_at" style="color: #555d65;">День публикации</label>
+                    <input type="text" name="published_at" id="published_at" value="{{ old('published_at', $defaultPublishedAtDate) }}" class="form-control" aria-describedby="publishedAtHelpBlock">
+                    <small id="publishedAtHelpBlock" class="form-text text-muted">
+                        Указывается только день публикации. Время открытия урока: <b>12:00</b> по МСК (пока нельзя изменить).
+                    </small>
                 </div>
                 <div class="input-group mb-3">
                     <div class="custom-file">
@@ -47,7 +50,8 @@
     <script src="https://cdn.jsdelivr.net/npm/gijgo@1.9.10/js/gijgo.min.js" type="text/javascript"></script>
     <script>
         $('#published_at').datepicker({
-            uiLibrary: 'bootstrap4'
+            uiLibrary: 'bootstrap4',
+            format: 'dd-mm-yyyy',
         });
     </script>
 @endsection

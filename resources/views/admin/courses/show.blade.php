@@ -20,13 +20,18 @@
             <img src="{{ $course->image_url }}" alt="" style="width: 100%; max-height: 200px;">
             <p class="lead text-muted">{{ $course->description }}</p>
             <div class="form-group">
-                <a href="{{ route('admin.lessons.create', ['course' => $course->slug]) }}" class="btn btn-sm btn-block btn-outline-secondary">Добавить урок</a>
+                <a href="{{ route('admin.lessons.create', ['course' => $course->slug]) }}" class="btn btn-block btn-success">Добавить урок</a>
             </div>
             <ul class="list-group">
                 @foreach($lessons as $lesson)
                     <a href="{{ route('admin.lessons.show', ['course' => $course->slug, 'lesson' => $lesson->slug]) }}"
                        class="list-group-item d-flex justify-content-between align-items-center">
                         {{ $lesson->title }}
+                        @if($lesson->isPublished())
+                            <span class="badge badge-success">Урок активный</span>
+                        @else
+                            <span class="badge badge-primary badge-pill">Выйдет {{ $lesson->published_at->toFormattedDateString() }}</span>
+                        @endif
                     </a>
                 @endforeach
             </ul>

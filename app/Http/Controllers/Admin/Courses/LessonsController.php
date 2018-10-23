@@ -19,8 +19,17 @@ class LessonsController extends Controller
 
     public function create(Course $course)
     {
+        $defaultPublishedAtDate = now()->addDay();
+
+        if (($latestLesson = $course->lessons()->latest()->first())) {
+            if ($latestLesson->published_at) {
+                $defaultPublishedAtDate = $latestLesson->published_at->addDay();
+            }
+        }
+
         return view('admin.lessons.create', [
             'course' => $course,
+            'defaultPublishedAtDate' => $defaultPublishedAtDate->format('d-m-Y'),
         ]);
     }
 
