@@ -27,7 +27,7 @@ class CreateLessonRequest extends FormRequest
             'title'         => ['required', 'min:3', 'string', 'unique:courses,title'],
             'description'   => ['required', 'string'],
             'video'         => ['required', 'mimetypes:video/avi,video/mpeg,video/quicktime,video/mp4'],
-            'published_at'  => ['required', 'date'],
+            'published_at'  => ['required', 'date', 'date_format:d-m-Y'],
         ];
     }
 }
