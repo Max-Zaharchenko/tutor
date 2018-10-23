@@ -57,4 +57,20 @@ class CoursesController extends Controller
             'lessons' => $course->lessons,
         ]);
     }
+
+    public function activate(Course $course)
+    {
+        $course->activate();
+
+        return back()
+            ->withSuccess('Курс успешно был активирован.');
+    }
+
+    public function deactivate(Course $course)
+    {
+        $course->deactivate();
+
+        return back()
+            ->withSuccess('Курс успешно был скрыт.');
+    }
 }

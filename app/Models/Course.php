@@ -31,4 +31,16 @@ class Course extends Model
     {
         return $this->getAttribute('published_at') !== null;
     }
+
+    public function activate()
+    {
+        $this->published_at = now();
+        $this->save();
+    }
+
+    public function deactivate()
+    {
+        $this->published_at = null;
+        $this->save();
+    }
 }

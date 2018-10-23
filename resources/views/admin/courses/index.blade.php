@@ -21,7 +21,7 @@
                                 @if($course->isPublished())
                                     <span class="badge badge-success float-right">Активный</span>
                                 @else
-                                    <span class="badge badge-secondary float-right">Off</span>
+                                    <span class="badge badge-danger float-right">Скрыт</span>
                                 @endif
                             </h5>
                         </div>
