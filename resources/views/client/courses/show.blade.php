@@ -16,7 +16,11 @@
                     <a href="{{ route('lessons.show', ['course' => $course->slug, 'lesson' => $lesson->slug]) }}"
                        class="list-group-item d-flex justify-content-between align-items-center">
                         {{ $lesson->title }}
-                        <span class="badge badge-primary badge-pill">14</span>
+                        @if($lesson->isPublished())
+                            <span class="badge badge-secondary">words</span>
+                        @else
+                            <span class="text-muted">Выйдет <b>{{ $lesson->published_at->timezone('Europe/Moscow')->format('d.m в H:i') }}</b></span>
+                        @endif
                     </a>
                 @endforeach
             </ul>
