@@ -49,9 +49,9 @@
 @section('scripts')
     <script src="https://cdn.jsdelivr.net/npm/gijgo@1.9.10/js/gijgo.min.js" type="text/javascript"></script>
     <script>
-        $('#published_at').datepicker({
+        $('#published_at').datetimepicker({
             uiLibrary: 'bootstrap4',
-            format: 'dd-mm-yyyy',
+            format: 'hh:mm dd-mm-yyyy',
         });
     </script>
 @endsection

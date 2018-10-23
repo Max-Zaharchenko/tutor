@@ -10,8 +10,7 @@ class CreateLessonInteraction
 {
     public function handle(Course $course, array $data)
     {
-        $data['published_at'] = Carbon::createFromFormat('d-m-Y', $data['published_at']->format('d-m-Y'), 'Europe/Moscow')
-            ->setTime('12', '00')
+        $data['published_at'] = Carbon::createFromFormat('h:i d-m-Y', $data['published_at']->format('h:i d-m-Y'), 'Europe/Moscow')
             ->timezone('UTC');
 
         $lesson = new Lesson($data);

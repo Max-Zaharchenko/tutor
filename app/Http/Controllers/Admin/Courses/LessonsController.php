@@ -29,7 +29,7 @@ class LessonsController extends Controller
 
         return view('admin.lessons.create', [
             'course' => $course,
-            'defaultPublishedAtDate' => $defaultPublishedAtDate->format('d-m-Y'),
+            'defaultPublishedAtDate' => $defaultPublishedAtDate->timezone('Europe/Moscow')->format('h:i d-m-Y'),
         ]);
     }
 
