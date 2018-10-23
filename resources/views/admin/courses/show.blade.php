@@ -30,7 +30,7 @@
                         @if($lesson->isPublished())
                             <span class="badge badge-success">Урок активный</span>
                         @else
-                            <span class="badge badge-secondary badge-pill">Выйдет ({{ $lesson->published_at->timezone('Europe/Moscow')->diffForHumans() }} в {{ $lesson->published_at->timezone('Europe/Moscow')->format('H:i') }})</span>
+                            <span class="text-muted">Выйдет ({{ $lesson->published_at->timezone('Europe/Moscow')->diffForHumans() }} в {{ $lesson->published_at->timezone('Europe/Moscow')->format('H:i') }})</span>
                         @endif
                     </a>
                 @endforeach
