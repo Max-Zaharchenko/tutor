@@ -23,6 +23,8 @@ class CoursesController extends Controller
 
     public function show(Course $course)
     {
+        $course->load('lessons.words');
+
         return view('client.courses.show', [
             'course'  => $course,
             'lessons' => $course->getAttribute('lessons')

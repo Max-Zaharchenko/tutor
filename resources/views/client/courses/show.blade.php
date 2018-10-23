@@ -17,7 +17,11 @@
                        class="list-group-item d-flex justify-content-between align-items-center">
                         {{ $lesson->title }}
                         @if($lesson->isPublished())
-                            <span class="badge badge-secondary">words</span>
+                            <span>
+                                @foreach($lesson->words as $word)
+                                    <span class="badge badge-secondary">{{ $word->original }}</span>
+                                @endforeach
+                            </span>
                         @else
                             <span class="text-muted">Выйдет <b>{{ $lesson->published_at->timezone('Europe/Moscow')->format('d.m в H:i') }}</b></span>
                         @endif

@@ -16,9 +16,7 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-body">
-                    <video width="100%" height="280" controls controlsList="nodownload" webkitallowfullscreen mozallowfullscreen allowfullscreen poster="PATH-TO-STILL-IMAGE">
-                        <source src="{{ $lesson->getAttribute('video_url') }}" type="video/mp4">
-                    </video>
+                    <iframe src="{{ $lesson->getAttribute('video_url') }}" width="100%" height="280" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                     <hr>
                         <lesson-words-component :words="{{ $lesson->words }}"></lesson-words-component>
                     <hr>
