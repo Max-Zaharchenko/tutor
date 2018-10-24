@@ -2,6 +2,14 @@
 
 @section('styles')
     <link rel="stylesheet" href="https://cdn.plyr.io/3.4.4/plyr.css">
+    <style>
+        .lessonDisabled {
+            color: currentColor;
+            opacity: 0.5;
+            text-decoration: none;
+            cursor: not-allowed;
+        }
+    </style>
 @endsection
 
 @section('content')
@@ -28,9 +36,16 @@
             <div class="card">
                 <div class="card-body">
                     @foreach($lessons as $courseLesson)
-                        <a href="{{ route('lessons.show', ['course' => $course->slug, 'lesson' => $courseLesson->slug]) }}"
-                           class="card-subtitle mb-2 {{ $lesson->is($courseLesson) ? '' : 'text-muted' }}">{{ $courseLesson->title }}</a>
-                        <br/>
+                        @if($courseLesson->isPublished())
+                            <a href="{{ route('lessons.show', ['course' => $course->slug, 'lesson' => $courseLesson->slug]) }}"
+                               class="card-subtitle mb-2 {{ $lesson->is($courseLesson) ? '' : 'text-muted' }}">{{ $courseLesson->title }}</a>
+                            <br/>
+                        @else
+                            <a href="#" class="card-subtitle mb-2 lessonDisabled" onclick="return false;">
+                                <span class="text-muted">{{ $courseLesson->title }}</span> <b>Выйдет {{ $courseLesson->published_at->timezone('Europe/Moscow')->format('m.d H:i') }}</b>
+                            </a>
+                            <br/>
+                        @endif
                     @endforeach
                 </div>
             </div>
