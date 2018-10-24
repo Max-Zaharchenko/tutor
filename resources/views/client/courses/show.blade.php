@@ -13,19 +13,23 @@
                 <p class="lead text-muted">{{ $course->description }}</p>
             <ul class="list-group">
                 @foreach($lessons as $lesson)
-                    <a href="{{ route('lessons.show', ['course' => $course->slug, 'lesson' => $lesson->slug]) }}"
-                       class="list-group-item d-flex justify-content-between align-items-center">
-                        {{ $lesson->title }}
-                        @if($lesson->isPublished())
+                    @if($lesson->isPublished())
+                        <a href="{{ route('lessons.show', ['course' => $course->slug, 'lesson' => $lesson->slug]) }}"
+                           class="list-group-item d-flex justify-content-between align-items-center">
+                            {{ $lesson->title }}
                             <span>
                                 @foreach($lesson->words as $word)
                                     <span class="badge badge-secondary">{{ $word->original }}</span>
                                 @endforeach
                             </span>
-                        @else
+                        </a>
+                    @else
+                        <button href="{{ route('lessons.show', ['course' => $course->slug, 'lesson' => $lesson->slug]) }}"
+                           class="list-group-item d-flex justify-content-between align-items-center disabled" disabled="disabled">
+                            {{ $lesson->title }}
                             <span class="text-muted">Выйдет <b>{{ $lesson->published_at->timezone('Europe/Moscow')->format('d.m в H:i') }}</b></span>
-                        @endif
-                    </a>
+                        </button>
+                    @endif
                 @endforeach
             </ul>
         </div>
