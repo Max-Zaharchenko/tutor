@@ -24,9 +24,7 @@
                                     <h5 class="card-title">
                                         <a href="{{ route('lessons.show', ['course' => $course->slug, 'lesson' => $lesson->slug]) }}">{{ $lesson->title }}</a>
                                     </h5>
-                                    @foreach($lesson->words as $word)
-                                        <span class="badge badge-secondary">{{ $word->original }}</span>
-                                    @endforeach
+                                    <lesson-words-component :words="{{ $lesson->words }}"></lesson-words-component>
                                 </div>
                             </div>
                         @else
