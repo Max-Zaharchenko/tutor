@@ -71,11 +71,11 @@
             <div class="row">
                 <div class="col-md-3">
                     <ul class="list-group">
-                        <a href="{{ route('home') }}" class="list-group-item {{ isset($active) && $active == 'dashboard' ? 'active' : '' }}">Дом</a>
-                        <a href="{{ route('courses.index') }}" class="list-group-item {{ isset($active) && $active == 'courses' ? 'active' : '' }}">Курсы</a>
-                        <a href="#" class="list-group-item d-flex justify-content-between align-items-center">
+                        <a href="{{ route('home') }}" class="list-group-item no-border {{ isset($active) && $active == 'dashboard' ? 'active' : '' }}">Дом</a>
+                        <a href="{{ route('courses.index') }}" class="list-group-item no-border {{ isset($active) && $active == 'courses' ? 'active' : '' }}">Курсы</a>
+                        <a href="#" class="list-group-item no-border d-flex justify-content-between align-items-center">
                             Практика <span class="badge badge-secondary badge-pill">Скоро</span></a>
-                        <a href="#" class="list-group-item d-flex justify-content-between align-items-center">
+                        <a href="#" class="list-group-item no-border d-flex justify-content-between align-items-center">
                             Вокебулари <span class="badge badge-secondary badge-pill">Скоро</span></a>
                     </ul>
                     <vocabulary-component></vocabulary-component>
