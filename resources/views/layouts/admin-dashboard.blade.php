@@ -71,6 +71,7 @@
                         <a href="{{ route('admin.dashboard.index') }}" class="list-group-item {{ isset($active) && $active == 'dashboard' ? 'active' : '' }}">Dashboard</a>
                         <a href="{{ route('admin.students.index') }}" class="list-group-item {{ isset($active) && $active == 'students' ? 'active' : '' }}">Студенты</a>
                         <a href="{{ route('admin.courses.index') }}" class="list-group-item {{ isset($active) && $active == 'courses' ? 'active' : '' }}">Курсы</a>
+                        <a href="{{ route('admin.calls.index') }}" class="list-group-item {{ isset($active) && $active == 'calls' ? 'active' : '' }}">Дзвонки</a>
                     </ul>
                 </div>
                 <div class="col-md-9">
