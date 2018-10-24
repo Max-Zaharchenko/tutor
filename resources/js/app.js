@@ -25,7 +25,10 @@ Vue.use(Vuex);
 
 Vue.component('vocabulary-component', require('./components/Client/Dashboard/VocabularyComponent.vue'));
 Vue.component('lesson-words-component', require('./components/Client/Courses/LessonWords.vue'));
+
+// Admin Components
 Vue.component('admin-lesson-words-component', require('./components/Admin/Courses/LessonWords.vue'));
+Vue.component('admin-schedule-call-component', require('./components/Admin/Calls/Schedule.vue'));
 
 const app = new Vue({
     el: '#app'

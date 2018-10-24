@@ -1,9 +1,9 @@
 <template>
     <div class="row">
         <div class="col-md-12">
-            <button class="btn btn-outline-secondary" v-for="word in words" v-on:click="selectWord(word)" style="margin-right: 5px;">
+            <span class="badge badge-secondary" v-for="word in words" v-on:click="selectWord(word)" style="margin-right: 5px; cursor: pointer;">
                 {{ word.original }}
-            </button>
+            </span>
         </div>
     </div>
 </template>

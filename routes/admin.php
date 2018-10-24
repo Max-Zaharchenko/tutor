@@ -20,3 +20,7 @@ $router->get('/courses/{courseSlug}/deactivate', 'Courses\CoursesController@deac
 $router->get('/courses/{courseSlug}/lessons/create', 'Courses\LessonsController@create')->name('admin.lessons.create');
 $router->post('/courses/{courseSlug}/lessons', 'Courses\LessonsController@store')->name('admin.lessons.store');
 $router->get('/courses/{courseSlug}/lessons/{lessonSlug}', 'Courses\LessonsController@show')->name('admin.lessons.show');
+
+// Calls
+$router->get('/calls', 'Calls\CallsController@index')->name('admin.calls.index');
+$router->get('/calls/schedule', 'Calls\CallsController@schedule')->name('admin.calls.create');

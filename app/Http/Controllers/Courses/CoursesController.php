@@ -14,7 +14,7 @@ class CoursesController extends Controller
 
     public function index()
     {
-        $courses = Course::published()->paginate();
+        $courses = Course::published()->withCount('lessons')->paginate();
 
         return view('client.courses.index', [
             'courses' => $courses,

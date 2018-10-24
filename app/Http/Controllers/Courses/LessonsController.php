@@ -17,6 +17,13 @@ class LessonsController extends Controller
     {
         $this->authorize('owns', [$course, $lesson]);
 
+        if (! $lesson->isPublished()) {
+            return redirect(route('courses.show', [
+                'course' => $course->slug,
+            ]))
+                ->withMessage(sprintf('Данный урок будет доступен %s', $lesson->friendly_publish_date));
+        }
+
         return view('client.lessons.show', [
             'course'  => $course,
             'lessons' => $course->lessons,

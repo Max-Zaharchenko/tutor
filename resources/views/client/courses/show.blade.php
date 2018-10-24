@@ -7,27 +7,40 @@
             <li class="breadcrumb-item active" aria-current="page">{{ $course->title }}</li>
         </ol>
     </nav>
-    <div class="card">
+    <div class="card no-border">
         <div class="card-body">
             <img src="{{ $course->image_url }}" alt="" style="width: 100%; max-height: 200px;">
-                <p class="lead text-muted">{{ $course->description }}</p>
-            <ul class="list-group">
-                @foreach($lessons as $lesson)
-                    <a href="{{ route('lessons.show', ['course' => $course->slug, 'lesson' => $lesson->slug]) }}"
-                       class="list-group-item d-flex justify-content-between align-items-center">
-                        {{ $lesson->title }}
+            <p class="lead text-muted">{{ $course->description }}</p>
+        </div>
+    </div>
+    <div class="row mt-1">
+        <div class="col-md-12">
+            @foreach($lessons->chunk(3) as $lessonsChunk)
+                <div class="card-deck mt-2">
+                    @foreach($lessonsChunk as $lesson)
                         @if($lesson->isPublished())
-                            <span>
-                                @foreach($lesson->words as $word)
-                                    <span class="badge badge-secondary">{{ $word->original }}</span>
-                                @endforeach
-                            </span>
+                            <div class="card no-border">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        <a href="{{ route('lessons.show', ['course' => $course->slug, 'lesson' => $lesson->slug]) }}">{{ $lesson->title }}</a>
+                                    </h5>
+                                    <lesson-words-component :words="{{ $lesson->words }}"></lesson-words-component>
+                                </div>
+                            </div>
                         @else
-                            <span class="text-muted">Выйдет <b>{{ $lesson->published_at->timezone('Europe/Moscow')->format('d.m в H:i') }}</b></span>
+                            <div class="card no-border">
+                                <div class="card-body">
+                                    <h4 href="{{ route('lessons.show', ['course' => $course->slug, 'lesson' => $lesson->slug]) }}"
+                                        class="card-title text-muted">
+                                        {{ $lesson->title }}
+                                    </h4>
+                                    <p class="card-text"><small class="text-muted">Выйдет {{ $lesson->friendly_publish_date }}</small></p>
+                                </div>
+                            </div>
                         @endif
-                    </a>
-                @endforeach
-            </ul>
+                    @endforeach
+                </div>
+            @endforeach
         </div>
     </div>
 @endsection

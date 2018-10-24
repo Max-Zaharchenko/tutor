@@ -27,7 +27,7 @@
                 </blockquote>
             </div>
             <div class="col-md-4">
-                <div class="card mb-3">
+                <div class="card no-border mb-3">
                     <div class="card-body text-dark">
                         <h5 class="card-title"><a href="#">Простое обучение</a></h5>
                         <p class="card-text">
@@ -39,7 +39,7 @@
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="card mb-3">
+                <div class="card no-border mb-3">
                     <div class="card-body text-dark">
                         <h5 class="card-title"><a href="#">Практика online</a></h5>
                         <p class="card-text">
@@ -51,7 +51,7 @@
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="card mb-3">
+                <div class="card no-border mb-3">
                     <div class="card-body text-dark">
                         <h5 class="card-title"><a href="#">Доброжелательное комьюнити</a></h5>
                         <p class="card-text">

@@ -49,6 +49,7 @@
 
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="{{ route('home') }}">Дом</a>
+                            <a class="dropdown-item" href="{{ route('courses.index') }}">Курсы</a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="{{ route('logout') }}"
                                onclick="event.preventDefault();
@@ -71,11 +72,11 @@
             <div class="row">
                 <div class="col-md-3">
                     <ul class="list-group">
-                        <a href="{{ route('home') }}" class="list-group-item {{ isset($active) && $active == 'dashboard' ? 'active' : '' }}">Дом</a>
-                        <a href="{{ route('courses.index') }}" class="list-group-item {{ isset($active) && $active == 'courses' ? 'active' : '' }}">Курсы</a>
-                        <a href="#" class="list-group-item d-flex justify-content-between align-items-center">
+                        <a href="{{ route('home') }}" class="list-group-item no-border {{ isset($active) && $active == 'dashboard' ? 'active' : '' }}">Дом</a>
+                        <a href="{{ route('courses.index') }}" class="list-group-item no-border {{ isset($active) && $active == 'courses' ? 'active' : '' }}">Курсы</a>
+                        <a href="#" class="list-group-item no-border d-flex justify-content-between align-items-center">
                             Практика <span class="badge badge-secondary badge-pill">Скоро</span></a>
-                        <a href="#" class="list-group-item d-flex justify-content-between align-items-center">
+                        <a href="#" class="list-group-item no-border d-flex justify-content-between align-items-center">
                             Вокебулари <span class="badge badge-secondary badge-pill">Скоро</span></a>
                     </ul>
                     <vocabulary-component></vocabulary-component>
@@ -84,6 +85,11 @@
                     {{--</div>--}}
                 </div>
                 <div class="col-md-9">
+                    @if(session()->has('message'))
+                        <div class="alert alert-primary" role="alert">
+                            {{ session('message') }}
+                        </div>
+                    @endif
                     @yield('content')
                 </div>
             </div>
