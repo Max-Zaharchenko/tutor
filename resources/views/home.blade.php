@@ -6,7 +6,7 @@
             <li class="breadcrumb-item active" aria-current="page">Дом</li>
         </ol>
     </nav>
-    <div class="card">
+    <div class="card no-border">
         <div class="card-body">
             <div class="row">
                 <div class="col-md-12">
