@@ -41,8 +41,8 @@
                                class="card-subtitle mb-2 {{ $lesson->is($courseLesson) ? '' : 'text-muted' }}">{{ $courseLesson->title }}</a>
                             <br/>
                         @else
-                            <a href="#" class="card-subtitle mb-2 lessonDisabled" onclick="return false;">
-                                <span class="text-muted">{{ $courseLesson->title }}</span> <b>Выйдет {{ $courseLesson->published_at->timezone('Europe/Moscow')->format('m.d H:i') }}</b>
+                            <a href="#" class="card-subtitle mb-2 lessonDisabled text-muted" onclick="return false;">
+                                {{ $courseLesson->title }} <b style="color: black; !important;">Выйдет {{ $courseLesson->friendly_publish_date }}</b>
                             </a>
                             <br/>
                         @endif

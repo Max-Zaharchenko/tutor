@@ -27,7 +27,7 @@
                         <button href="{{ route('lessons.show', ['course' => $course->slug, 'lesson' => $lesson->slug]) }}"
                            class="list-group-item d-flex justify-content-between align-items-center disabled" disabled="disabled">
                             {{ $lesson->title }}
-                            <span class="text-muted">Выйдет <b>{{ $lesson->published_at->timezone('Europe/Moscow')->format('d.m в H:i') }}</b></span>
+                            <span class="text-muted">Выйдет <b>{{ $lesson->friendly_publish_date }}</b></span>
                         </button>
                     @endif
                 @endforeach

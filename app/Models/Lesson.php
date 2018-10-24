@@ -36,4 +36,11 @@ class Lesson extends Model
     {
         return $query->where('slug', $value);
     }
+
+    public function getFriendlyPublishDateAttribute()
+    {
+        $date = $this->published_at->timezone('Europe/Moscow');
+
+        return sprintf('%s в %s', $date->format('d.m'), $date->format('H:i'));
+    }
 }

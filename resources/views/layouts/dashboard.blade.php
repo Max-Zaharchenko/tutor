@@ -84,6 +84,11 @@
                     {{--</div>--}}
                 </div>
                 <div class="col-md-9">
+                    @if(session()->has('message'))
+                        <div class="alert alert-primary" role="alert">
+                            {{ session('message') }}
+                        </div>
+                    @endif
                     @yield('content')
                 </div>
             </div>
