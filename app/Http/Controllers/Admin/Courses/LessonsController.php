@@ -35,18 +35,14 @@ class LessonsController extends Controller
 
     public function store(Course $course, CreateLessonRequest $request)
     {
-        $name = str_random(32) . '.mp4';
-        $videoUrl = $request->file('video')->storePubliclyAs('lessons', $name);
-        $videoUrl = Storage::url($videoUrl);
-
         $this->interact(CreateLessonInteraction::class, [
             'course' => $course,
             'data' => [
                 'slug'         => str_slug($request->get('title')),
                 'title'        => $request->get('title'),
                 'description'  => $request->get('description'),
+                'video_url'    => $request->get('video_url'),
                 'published_at' => Carbon::parse($request->get('published_at')),
-                'video_url'    => $videoUrl,
             ]
         ]);
 

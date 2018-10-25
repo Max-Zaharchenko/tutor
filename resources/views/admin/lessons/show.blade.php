@@ -16,9 +16,7 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-body">
-                    {{--<video width="100%" height="280" controls controlsList="nodownload" webkitallowfullscreen mozallowfullscreen allowfullscreen poster="PATH-TO-STILL-IMAGE">--}}
-                        {{--<source src="{{ $lesson->getAttribute('video_url') }}" type="video/mp4">--}}
-                    {{--</video>--}}
+                    <iframe src="{{ $lesson->getAttribute('video_url') }}" width="100%" height="280" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                     <hr>
                         <admin-lesson-words-component :lesson="{{ $lesson }}"></admin-lesson-words-component>
                     <hr>
@@ -27,14 +25,15 @@
             </div>
         </div>
         <div class="col-md-4">
-            <ul class="list-group">
-                @foreach($lessons as $courseLesson)
-                    <a class="list-group-item {{ $lesson->getKey() === $courseLesson->getKey() ? 'active' : '' }}"
-                       href="{{ route('admin.lessons.show', ['course' => $course->slug, 'lesson' => $courseLesson->slug]) }}">
-                        {{ $courseLesson->title }}
-                    </a>
-                @endforeach
-            </ul>
+            <div class="card">
+                <div class="card-body">
+                    @foreach($lessons as $courseLesson)
+                        <a href="{{ route('admin.lessons.show', ['course' => $course->slug, 'lesson' => $courseLesson->slug]) }}"
+                           class="card-subtitle mb-2 {{ $lesson->is($courseLesson) ? '' : 'text-muted' }}">{{ $courseLesson->title }}</a>
+                        <br/>
+                    @endforeach
+                </div>
+            </div>
         </div>
     </div>
 @endsection
