@@ -14,7 +14,7 @@
     </nav>
     <div class="card">
         <div class="card-body" style="background-color: #e9ecef;">
-            <form method="POST" action="{{ route('admin.lessons.store', ['course' => $course->slug]) }}" enctype="multipart/form-data">
+            <form method="POST" action="{{ route('admin.lessons.store', ['course' => $course->slug]) }}">
                 {{ csrf_field() }}
                 <div class="form-group">
                     <label for="title" style="color: #555d65;">Название</label>
@@ -31,11 +31,9 @@
                         Указывается только день публикации. Время открытия урока: <b>12:00</b> по МСК (пока нельзя изменить).
                     </small>
                 </div>
-                <div class="input-group mb-3">
-                    <div class="custom-file">
-                        <input type="file" name="video" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
-                        <label class="custom-file-label" for="inputGroupFile01">Видео</label>
-                    </div>
+                <div class="form-group">
+                    <label for="video_url" style="color: #555d65;">Ссылка на видео</label>
+                    <input type="text" name="video_url" id="video_url" value="{{ old('video_url', 'https://player.vimeo.com/video/id') }}" class="form-control">
                 </div>
                 @include('partials.errors')
                 <div class="form-group">

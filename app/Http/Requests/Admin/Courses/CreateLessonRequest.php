@@ -26,7 +26,7 @@ class CreateLessonRequest extends FormRequest
         return [
             'title'         => ['required', 'min:3', 'string', 'unique:courses,title'],
             'description'   => ['required', 'string'],
-            'video'         => ['required', 'mimetypes:video/avi,video/mpeg,video/quicktime,video/mp4'],
+            'video_url'     => ['required', 'url', 'unique:lessons,video_url'],
             'published_at'  => ['required', 'date', 'date_format:H:i d-m-Y'],
         ];
     }
