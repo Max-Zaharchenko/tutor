@@ -16,3 +16,29 @@
 .no-border {
   border: none;
 }
+
+.shadow-border {
+  @extend .no-border;
+  box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
+}
+
+.dashboard-navigation-menu > a {
+  color: #6c757d;
+  padding: 0.50rem 1.25rem;
+}
+
+.dashboard-navigation-menu > a:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.dashboard-navigation-menu > a.active-link {
+  color: black;
+  border-left: 3px solid green;
+  padding: 0.50rem 1.06rem;
+}
+
+.lesson-description {
+  @extend .lead;
+  font-size: 1rem;
+}

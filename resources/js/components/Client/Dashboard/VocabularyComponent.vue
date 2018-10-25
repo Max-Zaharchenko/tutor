@@ -1,18 +1,14 @@
 <template>
-    <div v-if="word != null">
-        <hr>
-        <div class="card">
-            <div class="card-body">
-                <h5 class="card-title d-flex justify-content-between align-items-center">
-                    Вокебулари <i class="fas fa-times" v-on:click="closeVocabulary" style="cursor: pointer"></i>
-                </h5>
-                <hr>
-                <ul class="list-unstyled">
-                    <li><b>{{ word.original }}</b></li>
-                    <li><span class="text-muted">{{ word.translation }}</span></li>
-                </ul>
-                <button class="btn btn-block btn-outline-secondary">Добавить в вокебулари</button>
-            </div>
+    <div class="card shadow-border mt-3" v-if="word != null">
+        <div class="card-body">
+            <h6 class="card-title d-flex justify-content-between align-items-center" style="font-weight: 800;">
+                Вокебулари <i class="fas fa-times" v-on:click="closeVocabulary" style="cursor: pointer"></i>
+            </h6>
+            <ul class="list-unstyled">
+                <li><span style="font-weight: 800;">{{ word.original }}</span></li>
+                <li><span class="text-muted">{{ word.translation }}</span></li>
+            </ul>
+            <button class="btn btn-sm btn-block btn-outline-secondary">Добавить в вокебулари</button>
         </div>
     </div>
 </template>

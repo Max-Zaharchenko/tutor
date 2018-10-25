@@ -22,16 +22,16 @@
     </nav>
     <div class="row">
         <div class="col-md-8">
-            <div class="card no-border">
+            <div class="card shadow-border">
                 <div class="card-body">
                     <iframe src="{{ $lesson->getAttribute('video_url') }}" width="100%" height="280" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                     <lesson-words-component :words="{{ $lesson->words }}"></lesson-words-component>
-                    <p class="lead text-muted mt-2">{{ $lesson->description }}</p>
+                    <p class="lesson-description text-muted mt-2">{{ $lesson->description }}</p>
                 </div>
             </div>
         </div>
         <div class="col-md-4">
-            <div class="card no-border">
+            <div class="card shadow-border">
                 <div class="card-body">
                     @foreach($lessons as $courseLesson)
                         @if($courseLesson->isPublished())

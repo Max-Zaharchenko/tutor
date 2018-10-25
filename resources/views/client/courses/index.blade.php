@@ -12,7 +12,7 @@
         @endif
         <div class="card-deck">
             @foreach($courses as $course)
-                <div class="card no-border">
+                <div class="card shadow-border">
                     <div class="card-body">
                         <a href="{{ route('courses.show', ['course' => $course->slug]) }}"><img class="card-img-top" src="{{ $course->getAttribute('image_url') }}" alt="Card image cap"></a>
                         <h5 class="card-title mt-2"><a href="{{ route('courses.show', ['course' => $course->slug]) }}">{{ $course->title }}</a></h5>

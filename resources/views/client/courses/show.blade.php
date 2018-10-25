@@ -7,7 +7,7 @@
             <li class="breadcrumb-item active" aria-current="page">{{ $course->title }}</li>
         </ol>
     </nav>
-    <div class="card no-border">
+    <div class="card shadow-border">
         <div class="card-body">
             <img src="{{ $course->image_url }}" alt="" style="width: 100%; max-height: 200px;">
             <p class="lead text-muted">{{ $course->description }}</p>
@@ -19,7 +19,7 @@
                 <div class="card-deck mt-2">
                     @foreach($lessonsChunk as $lesson)
                         @if($lesson->isPublished())
-                            <div class="card no-border">
+                            <div class="card shadow-border">
                                 <div class="card-body">
                                     <h5 class="card-title">
                                         <a href="{{ route('lessons.show', ['course' => $course->slug, 'lesson' => $lesson->slug]) }}">{{ $lesson->title }}</a>
@@ -28,7 +28,7 @@
                                 </div>
                             </div>
                         @else
-                            <div class="card no-border">
+                            <div class="card shadow-border">
                                 <div class="card-body">
                                     <h4 href="{{ route('lessons.show', ['course' => $course->slug, 'lesson' => $lesson->slug]) }}"
                                         class="card-title text-muted">

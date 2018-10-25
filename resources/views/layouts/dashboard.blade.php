@@ -71,9 +71,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
-                    <ul class="list-group">
-                        <a href="{{ route('home') }}" class="list-group-item no-border {{ isset($active) && $active == 'dashboard' ? 'active' : '' }}">Дом</a>
-                        <a href="{{ route('courses.index') }}" class="list-group-item no-border {{ isset($active) && $active == 'courses' ? 'active' : '' }}">Курсы</a>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item active" aria-current="page">Навигация</li>
+                        </ol>
+                    </nav>
+                    <ul class="list-group shadow-border dashboard-navigation-menu">
+                        <a href="{{ route('home') }}" class="list-group-item no-border {{ isset($active) && $active == 'dashboard' ? 'active-link' : '' }}">Дом</a>
+                        <a href="{{ route('courses.index') }}" class="list-group-item no-border {{ isset($active) && $active == 'courses' ? 'active-link' : '' }}">Курсы</a>
                         <a href="#" class="list-group-item no-border d-flex justify-content-between align-items-center">
                             Практика <span class="badge badge-secondary badge-pill">Скоро</span></a>
                         <a href="#" class="list-group-item no-border d-flex justify-content-between align-items-center">
