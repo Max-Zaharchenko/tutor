@@ -11,7 +11,7 @@
 |
 */
 
-\Illuminate\Support\Facades\Auth::routes(['register' => false]);
+\Illuminate\Support\Facades\Auth::routes();
 
 //$router->get('/mailable', function () {
 //    return new \App\Mail\Students\Invite(\App\Models\Invite::first());
