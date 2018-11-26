@@ -19,7 +19,7 @@ class Lesson extends Model
 
     public function words()
     {
-        return $this->hasMany(Word::class);
+        return $this->belongsToMany(Word::class, 'lesson_words');
     }
 
     public function isPublished()

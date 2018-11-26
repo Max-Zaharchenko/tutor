@@ -24,3 +24,6 @@ $router->get('/courses/{courseSlug}/lessons/{lessonSlug}', 'Courses\LessonsContr
 // Calls
 $router->get('/calls', 'Calls\CallsController@index')->name('admin.calls.index');
 $router->get('/calls/schedule', 'Calls\CallsController@schedule')->name('admin.calls.create');
+
+// Vocabulary
+$router->get('/vocabulary', 'Vocabulary\VocabularyController@index')->name('admin.vocabulary.index');
