@@ -28,9 +28,9 @@ Vue.component('lesson-words-component', require('./components/Client/Courses/Les
 
 // Admin Components
 Vue.component('admin-lesson-words-component', require('./components/Admin/Courses/LessonWords.vue'));
-Vue.component('admin-schedule-call-component', require('./components/Admin/Calls/Schedule.vue'));
 Vue.component('admin-vocabulary-words', require('./components/Admin/Vocabulary/Index.vue'));
 Vue.component('admin-vocabulary-create-word', require('./components/Admin/Vocabulary/Create.vue'));
+Vue.component('admin-schedule-call', require('./components/Admin/Calls/Schedule.vue'));
 
 const app = new Vue({
     el: '#app'
