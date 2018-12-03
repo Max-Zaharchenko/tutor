@@ -13,6 +13,11 @@ class CallsController extends Controller
      */
     public function index()
     {
-        return CallResource::collection(Call::all());
+        $calls = Call::query()
+            ->with('course')
+            ->orderBy('call_date', 'ASC')
+            ->get();
+
+        return CallResource::collection($calls);
     }
 }

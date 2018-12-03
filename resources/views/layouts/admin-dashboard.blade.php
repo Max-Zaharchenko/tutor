@@ -72,7 +72,7 @@
                         <a href="{{ route('admin.students.index') }}" class="list-group-item {{ isset($active) && $active == 'students' ? 'active' : '' }}">Студенты</a>
                         <a href="{{ route('admin.courses.index') }}" class="list-group-item {{ isset($active) && $active == 'courses' ? 'active' : '' }}">Курсы</a>
                         <a href="{{ route('admin.vocabulary.index') }}" class="list-group-item {{ isset($active) && $active == 'vocabulary' ? 'active' : '' }}">Вокеблуари</a>
-                        <a href="{{ route('admin.calls.index') }}" class="list-group-item {{ isset($active) && $active == 'calls' ? 'active' : '' }}">Дзвонки</a>
+                        <a href="{{ route('admin.calls.index') }}" class="list-group-item {{ isset($active) && $active == 'calls' ? 'active' : '' }}">Содзвоны</a>
                     </ul>
                 </div>
                 <div class="col-md-9">

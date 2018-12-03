@@ -14,6 +14,11 @@ class CallResource extends JsonResource
      */
     public function toArray($request)
     {
-        return parent::toArray($request);
+        return [
+            'id' => $this->getKey(),
+            'call_date' => $this->getAttribute('call_date')->toDateTimeString(),
+            'formatted_call_date' => $this->getAttribute('call_date')->toFormattedDateString(),
+            'course' => $this->whenLoaded('course', new CourseResource($this->getAttribute('course')))
+        ];
     }
 }

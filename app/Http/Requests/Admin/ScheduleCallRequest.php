@@ -24,9 +24,7 @@ class ScheduleCallRequest extends FormRequest
     public function rules()
     {
         return [
-            'title'       => ['required', 'string', 'max:255'],
             'call_date'   => ['required', 'date'],
-            'description' => ['required', 'string'],
         ];
     }
 }

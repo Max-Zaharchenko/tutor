@@ -16,8 +16,6 @@ class CreateCallsTable extends Migration
         Schema::create('calls', function (Blueprint $table) {
             $table->increments('id');
             $table->unsignedInteger('course_id');
-            $table->string('title');
-            $table->text('description');
             $table->timestamp('call_date')->nullable();
             $table->timestamps();
 

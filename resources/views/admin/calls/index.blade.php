@@ -9,7 +9,7 @@
     </nav>
     <div class="row">
         <div class="col-md-12">
-            <div class="collapqse mb-3" id="createCall">
+            <div class="collapse mb-3" id="createCall">
                 <div class="card card-body">
                     <admin-schedule-call></admin-schedule-call>
                 </div>
