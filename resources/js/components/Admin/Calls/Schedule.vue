@@ -4,23 +4,23 @@
            <div class="form-group col-md-4">
                <label for="course">Курс</label>
                <select name="course" id="course" class="form-control" v-model="course_id">
-                   <option v-bind:value="course.id" v-for="course in courses">{{ course.title }}</option>
+                   <option v-bind:value="course.id" v-for="course in courses" class="justify-content-between">{{ course.title }}</option>
                </select>
            </div>
            <div class="form-group col-md-4">
                <label for="title">Название содзвона</label>
-               <input type="text" class="form-control">
+               <input type="text" name="title" v-model="call.title" class="form-control">
            </div>
            <div class="form-group col-md-4">
                <label for="call_date">День содзвона</label>
-               <datepicker :bootstrap-styling="true" :language="ru" v-model="call_date"></datepicker>
+               <datepicker :bootstrap-styling="true" :language="ru" v-model="call.call_date"></datepicker>
            </div>
            <div class="form-group col-md-12">
                <label for="description">Описание</label>
-               <textarea name="" id="" cols="30" rows="3" class="form-control"></textarea>
+               <textarea name="description" v-model="call.description" id="" cols="30" rows="3" class="form-control"></textarea>
            </div>
            <div class="form-group col-md-12">
-               <button class="btn btn-primary btn-sm btn-block">Создать содзвон</button>
+               <button class="btn btn-success btn-sm btn-block">Создать содзвон</button>
            </div>
        </div>
     </form>
@@ -40,7 +40,12 @@
                 course_id: '',
                 call_date: '',
                 courses: [],
-                ru: ru
+                ru: ru,
+                call: {
+                    title: '',
+                    call_date: '',
+                    description: ''
+                }
             };
         },
         mounted() {
@@ -54,9 +59,11 @@
         },
         methods: {
             createCall: function () {
-                console.log(this.call_course_id);
-                axios.post(`/api/admin/courses/${this.course_id}/calls`)
-                    .then(r => {})
+                console.log(this.call);
+                axios.post(`/api/admin/courses/${this.course_id}/calls`, this.call)
+                    .then(r => {
+                        alert('q')
+                    })
                     .catch(e => {
                         console.log(e.response.status);
                         alert('error scheduling a call')

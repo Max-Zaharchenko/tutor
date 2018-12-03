@@ -3,7 +3,6 @@
 namespace App\Http\Requests\Admin;
 
 use Illuminate\Foundation\Http\FormRequest;
-use Illuminate\Validation\Rule;
 
 class ScheduleCallRequest extends FormRequest
 {
@@ -25,9 +24,8 @@ class ScheduleCallRequest extends FormRequest
     public function rules()
     {
         return [
-            'course_id' => ['required', Rule::exists('courses', 'id')],
-            'title'     => ['required', 'string', 'max:255'],
-            'date'      => ['required', 'date'],
+            'title'       => ['required', 'string', 'max:255'],
+            'call_date'   => ['required', 'date'],
             'description' => ['required', 'string'],
         ];
     }

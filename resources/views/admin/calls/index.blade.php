@@ -18,6 +18,7 @@
         <div class="col-md-12">
             <div class="card card-default">
                 <div class="card-body">
+                    <admin-calls-index></admin-calls-index>
                 </div>
             </div>
         </div>
