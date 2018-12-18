@@ -11,7 +11,7 @@
         <div class="col-md-12">
             <div class="collapse mb-3" id="createCall">
                 <div class="card card-body">
-                    <admin-schedule-call></admin-schedule-call>
+                    <admin-schedule-call :call-id="{{ $call->getKey() }}"></admin-schedule-call>
                 </div>
             </div>
         </div>
