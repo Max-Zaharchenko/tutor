@@ -33,20 +33,22 @@ class VacantSessionTimeRule implements Rule
      */
     public function passes($attribute, $value)
     {
-        $start = Carbon::parse(array_get($value, 'start'));
-        $end = Carbon::parse(array_get($value, 'end'));
+        $day = $this->call->call_date->copy();
+
+        $start = $day->copy()->setTimeFromTimeString(array_get($value, 'start'));
+        $end = $day->copy()->setTimeFromTimeString(array_get($value, 'end'));
 
         return CallSession::query()
                 ->where('call_id', $this->call->getKey())
                 ->where(function ($query) use ($start, $end) {
-                    $query->where('start_at', '<', $start)
-                        ->where('end_at', '>', $end)
-                        ->orWhere('start_at', '>', $start)
-                        ->where('start_at', '<', $end)
-                        ->orWhere('end_at', '<', $end)
-                        ->where('end_at', '>', $start)
-                        ->orWhere('start_at', '>', $start)
-                        ->where('end_at', '<', $end);
+                    $query->where('start_at', '<=', $start)
+                        ->where('end_at', '>=', $end)
+                        ->orWhere('start_at', '>=', $start)
+                        ->where('start_at', '<=', $end)
+                        ->orWhere('end_at', '<=', $end)
+                        ->where('end_at', '>=', $start)
+                        ->orWhere('start_at', '>=', $start)
+                        ->where('end_at', '<=', $end);
                 })
                 ->doesntExist();
     }

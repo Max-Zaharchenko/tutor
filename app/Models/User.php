@@ -42,4 +42,9 @@ class User extends Authenticatable
     {
         return $query->where('role', 'student');
     }
+
+    public function calls()
+    {
+        return $this->belongsToMany(Call::class);
+    }
 }

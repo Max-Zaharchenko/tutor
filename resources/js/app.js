@@ -33,6 +33,7 @@ Vue.component('admin-vocabulary-create-word', require('./components/Admin/Vocabu
 Vue.component('admin-schedule-call', require('./components/Admin/Calls/Schedule.vue'));
 Vue.component('admin-calls-index', require('./components/Admin/Calls/Index.vue'));
 Vue.component('admin-add-call-session', require('./components/Admin/Calls/AddCallSession.vue'));
+Vue.component('admin-call-show', require('./components/Admin/Calls/Show.vue'));
 
 const app = new Vue({
     el: '#app'

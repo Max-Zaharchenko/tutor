@@ -43,4 +43,9 @@ class Course extends Model
         $this->published_at = null;
         $this->save();
     }
+
+    public function users()
+    {
+        return $this->belongsToMany(User::class);
+    }
 }

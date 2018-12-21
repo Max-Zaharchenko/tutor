@@ -20,4 +20,15 @@ class CallsController extends Controller
 
         return CallResource::collection($calls);
     }
+
+    /**
+     * @param Call $call
+     * @return CallResource
+     */
+    public function show(Call $call)
+    {
+        $call->load(['course', 'sessions']);
+
+        return new CallResource($call);
+    }
 }

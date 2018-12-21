@@ -56,9 +56,7 @@
 
                         alert('Содзвон был успешно создан.');
 
-                        this.call = {
-                            call_date: ''
-                        };
+                        location.reload();
                     })
                     .catch(e => {
                         alert('error scheduling a call')

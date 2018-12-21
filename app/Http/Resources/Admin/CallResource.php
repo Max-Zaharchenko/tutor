@@ -18,7 +18,8 @@ class CallResource extends JsonResource
             'id' => $this->getKey(),
             'call_date' => $this->getAttribute('call_date')->toDateTimeString(),
             'formatted_call_date' => $this->getAttribute('call_date')->toFormattedDateString(),
-            'course' => $this->whenLoaded('course', new CourseResource($this->getAttribute('course')))
+            'course' => $this->whenLoaded('course', new CourseResource($this->getAttribute('course'))),
+            'sessions' => $this->whenLoaded('sessions', CallSessionResource::collection($this->getAttribute('sessions'))),
         ];
     }
 }

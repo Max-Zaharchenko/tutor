@@ -18,4 +18,9 @@ class Call extends Model
     {
         return $this->belongsTo(Course::class);
     }
+
+    public function sessions()
+    {
+        return $this->hasMany(CallSession::class);
+    }
 }

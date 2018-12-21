@@ -19,8 +19,10 @@ class CallsController extends Controller
         ]);
     }
 
-    public function schedule()
+    public function show(Call $call)
     {
-        return view('admin.calls.schedule');
+        return view('admin.calls.show', [
+            'call' => $call,
+        ]);
     }
 }

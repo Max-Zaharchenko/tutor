@@ -29,5 +29,5 @@
     </div>
 
     <!-- Modal -->
-    <admin-add-call-session></admin-add-call-session>
+    <admin-add-call-session :call-id="5"></admin-add-call-session>
 @endsection
