@@ -19,6 +19,11 @@ class CreateCallSessionsTable extends Migration
             $table->timestamp('start_at')->nullable();
             $table->timestamp('end_at')->nullable();
             $table->timestamps();
+
+            $table->foreign('call_id')
+                ->references('id')
+                ->on('calls')
+                ->onDelete('CASCADE');
         });
     }
 

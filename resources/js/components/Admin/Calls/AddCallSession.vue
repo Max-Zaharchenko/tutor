@@ -56,7 +56,7 @@
             submitSessions: function () {
                 axios.post(`/api/admin/calls/${this.callId}/sessions`, {sessions: this.sessions})
                     .then(r => {
-                        console.log(r);
+                        location.reload();
                     })
                     .catch(e => {
                         alert('error adding sessions');

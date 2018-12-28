@@ -10,6 +10,7 @@ $router->post('/courses/{course}/calls', 'Courses\CallsController@store');
 // Calls
 $router->get('/calls', 'Calls\CallsController@index');
 $router->get('/calls/{call}', 'Calls\CallsController@show');
+$router->get('/calls/{call}/sessions', 'Calls\SessionsController@index');
 $router->post('/calls/{call}/sessions', 'Calls\SessionsController@store');
 
 // Vocabulary

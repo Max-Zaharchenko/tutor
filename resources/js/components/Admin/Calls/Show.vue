@@ -1,14 +1,20 @@
 <template>
     <div>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item active" aria-current="page">Содзвоны</li>
+                <a href="javascript:void(0)" class="ml-auto" data-toggle="modal" data-target="#exampleModalCenter">Добавить Сессию</a>
+            </ol>
+        </nav>
         <div class="row">
             <div class="col-md-12">
                 <div class="card card-default">
                     <div class="card-body">
                         <div class="row">
-                            <div class="col-md-2 text-center" v-for="hour in hours">
-                                <b>{{ hour.hour }}</b>
-                                <div class="form-group" v-for="session in hour.sessions">
-                                    <button class="btn btn-sm btn-success mt-2">{{ session.start }} - {{ session.end }}</button>
+                            <div class="col-md-2 text-center" v-for="(sessions, hour) in hours">
+                                <b>{{ hour }}</b>
+                                <div class="form-group" v-for="session in sessions">
+                                    <button class="btn btn-sm btn-success">{{ session.start_date }} - {{ session.end_date }}</button>
                                 </div>
                             </div>
                         </div>
@@ -18,7 +24,7 @@
         </div>
 
         <!-- Modal -->
-        <admin-add-call-session :call-id="5"></admin-add-call-session>
+        <admin-add-call-session :call-id="callId"></admin-add-call-session>
     </div>
 </template>
 
@@ -27,15 +33,17 @@
         props: ['callId'],
         data: function () {
             return {
-                hours: [
-                    {
-                        hour: '13:**',
-                        sessions: [
-                            {start: '13:30', end: '13:35', status: 'btn-success'}
-                        ]
-                    }
-                ],
+                hours: [],
             };
         },
+        mounted() {
+            axios.get(`/api/admin/calls/${this.callId}/sessions`)
+                .then(r => {
+                    this.hours = r.data.data;
+                })
+                .catch(e => {
+                    console.log(e);
+                })
+        }
     }
 </script>
