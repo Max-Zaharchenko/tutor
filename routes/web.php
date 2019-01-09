@@ -33,5 +33,5 @@ $router->group(['middleware' => 'auth'], function () use ($router) {
     $router->get('/courses/{courseSlug}/lessons/{lessonSlug}', 'Courses\LessonsController@show')->name('lessons.show');
 
     // Practice
-    $router->get('/practice', 'Practice\PracticeController@index')->name('practice.index');
+    $router->get('/practice', 'Client\Calls\CallsController@index')->name('calls.index');
 });

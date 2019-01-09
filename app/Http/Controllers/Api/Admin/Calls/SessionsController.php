@@ -22,6 +22,7 @@ class SessionsController extends Controller
             return $session;
         });
 
+        logger($callSessions->groupBy('hour')->toArray());
         return response()->json([
             'data' => $callSessions->groupBy('hour')
         ]);

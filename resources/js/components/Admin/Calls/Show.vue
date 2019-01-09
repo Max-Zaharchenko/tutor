@@ -1,11 +1,5 @@
 <template>
     <div>
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item active" aria-current="page">Содзвоны</li>
-                <a href="javascript:void(0)" class="ml-auto" data-toggle="modal" data-target="#exampleModalCenter">Добавить Сессию</a>
-            </ol>
-        </nav>
         <div class="row">
             <div class="col-md-12">
                 <div class="card card-default">
@@ -14,7 +8,7 @@
                             <div class="col-md-2 text-center" v-for="(sessions, hour) in hours">
                                 <b>{{ hour }}</b>
                                 <div class="form-group" v-for="session in sessions">
-                                    <button class="btn btn-sm btn-success">{{ session.start_date }} - {{ session.end_date }}</button>
+                                    <button class="btn btn-sm" v-bind:class="hourStatus(session.status)">{{ session.start_date }} - {{ session.end_date }}</button>
                                 </div>
                             </div>
                         </div>
@@ -44,6 +38,17 @@
                 .catch(e => {
                     console.log(e);
                 })
+        },
+        methods: {
+            hourStatus: function (status) {
+                return {
+                    'btn-outline-success': status === 'PLANNED',
+                    'btn-outline-primary': status === 'BOOKED',
+                    'btn-outline-secondary': status === 'PROCESSING',
+                    'btn-outline-info': status === 'FINISHED',
+                    'btn-outline-danger': status === 'CANCELLED',
+                };
+            }
         }
     }
 </script>

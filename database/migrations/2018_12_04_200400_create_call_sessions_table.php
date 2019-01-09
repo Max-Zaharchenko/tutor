@@ -16,6 +16,8 @@ class CreateCallSessionsTable extends Migration
         Schema::create('call_sessions', function (Blueprint $table) {
             $table->increments('id');
             $table->unsignedInteger('call_id');
+            $table->unsignedInteger('user_id')->nullable();
+            $table->enum('status', ['PLANNED', 'BOOKED', 'PROCESSING', 'FINISHED', 'CANCELLED'])->default('PLANNED');
             $table->timestamp('start_at')->nullable();
             $table->timestamp('end_at')->nullable();
             $table->timestamps();
@@ -24,6 +26,13 @@ class CreateCallSessionsTable extends Migration
                 ->references('id')
                 ->on('calls')
                 ->onDelete('CASCADE');
+
+            $table->foreign('user_id')
+                ->references('id')
+                ->on('users')
+                ->onDelete('CASCADE');
+
+            $table->unique(['call_id', 'user_id']);
         });
     }
 

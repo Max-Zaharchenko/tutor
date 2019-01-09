@@ -53915,12 +53915,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     props: ['callId'],
@@ -53937,6 +53931,18 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         }).catch(function (e) {
             console.log(e);
         });
+    },
+
+    methods: {
+        hourStatus: function hourStatus(status) {
+            return {
+                'btn-outline-success': status === 'PLANNED',
+                'btn-outline-primary': status === 'BOOKED',
+                'btn-outline-secondary': status === 'PROCESSING',
+                'btn-outline-info': status === 'FINISHED',
+                'btn-outline-danger': status === 'CANCELLED'
+            };
+        }
     }
 });
 
@@ -53951,8 +53957,6 @@ var render = function() {
   return _c(
     "div",
     [
-      _vm._m(0),
-      _vm._v(" "),
       _c("div", { staticClass: "row" }, [
         _c("div", { staticClass: "col-md-12" }, [
           _c("div", { staticClass: "card card-default" }, [
@@ -53971,7 +53975,10 @@ var render = function() {
                         return _c("div", { staticClass: "form-group" }, [
                           _c(
                             "button",
-                            { staticClass: "btn btn-sm btn-success" },
+                            {
+                              staticClass: "btn btn-sm",
+                              class: _vm.hourStatus(session.status)
+                            },
                             [
                               _vm._v(
                                 _vm._s(session.start_date) +
@@ -53997,38 +54004,7 @@ var render = function() {
     1
   )
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("nav", { attrs: { "aria-label": "breadcrumb" } }, [
-      _c("ol", { staticClass: "breadcrumb" }, [
-        _c(
-          "li",
-          {
-            staticClass: "breadcrumb-item active",
-            attrs: { "aria-current": "page" }
-          },
-          [_vm._v("Содзвоны")]
-        ),
-        _vm._v(" "),
-        _c(
-          "a",
-          {
-            staticClass: "ml-auto",
-            attrs: {
-              href: "javascript:void(0)",
-              "data-toggle": "modal",
-              "data-target": "#exampleModalCenter"
-            }
-          },
-          [_vm._v("Добавить Сессию")]
-        )
-      ])
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
