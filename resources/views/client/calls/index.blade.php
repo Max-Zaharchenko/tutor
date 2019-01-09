@@ -6,21 +6,17 @@
             <li class="breadcrumb-item active" aria-current="page">Практика</li>
         </ol>
     </nav>
-    <div class="card">
-        <div class="card-body">
-            <div class="row">
-                <div class="col-md-12">
-                    <p class="lead text-center">Practice with Zack</p>
-                    <hr>
-                    <span class="text-muted">
-                        Сайт рыбатекст поможет дизайнеру, верстальщику,
-                        вебмастеру сгенерировать несколько абзацев более менее осмысленного
-                        текста рыбы на русском языке, а начинающему оратору отточить навык
-                        публичных выступлений в домашних условиях. При создании генератора мы использовали
-                        небезизвестный универсальный код речей.
-                    </span>
-                </div>
+    @forelse($calls as $call)
+        <div class="card shadow-border mb-3">
+            <div class="card-body">
+                <h5 class="card-title">
+                    <a href="{{ route('courses.show', ['course' => $call->course->slug]) }}" style="color: black;" target="_blank">{{ $call->course->title }}</a>
+                    <small class="text-muted">{{ $call->call_date->toFormattedDateString() }}</small>
+                </h5>
+                <p class="card-text text-muted">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-outline-secondary">Выбрать время</a>
             </div>
         </div>
-    </div>
+    @empty
+    @endforelse
 @endsection
