@@ -49,10 +49,12 @@
                             <i class="fas fa-3x fa-graduation-cap"></i>
                         </div>
                         <div class="float-right">
+                            @if($nearestCall)
                             <p class="mb-0 text-right">Ближайший дзвонок</p>
                             <div class="fluid-container">
-                                <h3 class="font-weight-medium text-right mb-0"><a href="#">Паша</a> <b>13:20</b></h3>
+                                <p class="font-weight-medium text-right mb-0"><a href="#">{{ $nearestCall->user->name }}</a> <small class="text-muted">{{ $nearestCall->start_at->diffForHumans() }}</small></p>
                             </div>
+                            @endif
                         </div>
                     </div>
                 </div>
