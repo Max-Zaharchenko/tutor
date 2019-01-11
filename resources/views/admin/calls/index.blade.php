@@ -32,7 +32,7 @@
                                 <tr>
                                     <td>{{ $call->course->title }}</td>
                                     <td>{{ $call->call_date->toFormattedDateString() }}</td>
-                                    <td><b style="color: green;">13</b> / <b style="color: red;">4</b></td>
+                                    <td><b style="color: green;">{{ $call->students_applied }}</b> / <b style="color: red;">{{ $call->unregistered_students }}</b></td>
                                     <td>
                                         <a href="{{ route('admin.calls.show', ['call' => $call]) }}" class="btn btn-secondary btn-sm">Просмотр</a>
                                     </td>

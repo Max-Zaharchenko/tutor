@@ -11,4 +11,14 @@ class CallSession extends Model
     protected $dates = [
         'start_at', 'end_at',
     ];
+
+    public function scopeHaveAppliedStudents($query)
+    {
+        return $query->whereNotNull('user_id')->whereIn('status', ['PLANNED', 'BOOKED', 'PROCESSING', 'FINISHED']);
+    }
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }

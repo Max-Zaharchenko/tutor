@@ -14,8 +14,25 @@ class CallsController extends Controller
 
     public function index()
     {
+        $calls = Call::query()
+                    ->withCount([
+                        'sessions as students_applied' => function ($query) {
+                            $query->haveAppliedStudents();
+                        }
+                    ])
+                    ->with([
+                        'course' => function ($query) {
+                            $query->withCount('users');
+                        }
+                    ])
+                    ->get();
+
+        $calls->each(function ($call) {
+            $call->unregistered_students = $call->course->users_count - $call->students_applied;
+        });
+
         return view('admin.calls.index', [
-            'calls' => Call::all(),
+            'calls' => $calls,
         ]);
     }
 
