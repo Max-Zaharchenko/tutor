@@ -21,8 +21,21 @@ class HomeController extends Controller
      */
     public function index()
     {
+        $user = auth()->user();
+
+        $courses = $user->courses;
+        $courses->load([
+            'calls' => function ($query) {
+                $query->with('course');
+                $query->whereDay('call_date', '>=', now());
+            }
+        ]);
+
+        $calls = $courses->pluck('calls')->collapse();
+
         return view('home', [
-            'user' => auth()->user(),
+            'user'  => $user,
+            'calls' => $calls,
         ]);
     }
 }

@@ -43,6 +43,11 @@ class User extends Authenticatable
         return $query->where('role', 'student');
     }
 
+    public function courses()
+    {
+        return $this->belongsToMany(Course::class, 'course_user');
+    }
+
     public function calls()
     {
         return $this->belongsToMany(Call::class);

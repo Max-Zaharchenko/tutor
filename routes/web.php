@@ -31,7 +31,4 @@ $router->group(['middleware' => 'auth'], function () use ($router) {
 
     // Lessons
     $router->get('/courses/{courseSlug}/lessons/{lessonSlug}', 'Courses\LessonsController@show')->name('lessons.show');
-
-    // Calls
-    $router->get('/calls', 'Client\Calls\CallsController@index')->name('calls.index');
 });

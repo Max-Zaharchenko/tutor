@@ -12,7 +12,7 @@
                 <h5 class="card-title">
                     <a href="{{ route('courses.show', ['course' => $call->course->slug]) }}" style="color: black;" target="_blank">{{ $call->course->title }}</a>
                 </h5>
-                <p class="card-text text-muted">With supporting text below as a natural lead-in to additional content.</p>
+                <p class="card-text text-muted">Выберите удобное время для дзвонка.</p>
                 <a href="#" class="btn btn-outline-secondary">Выбрать время</a>
             </div>
         </div>

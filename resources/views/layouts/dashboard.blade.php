@@ -79,7 +79,6 @@
                     <ul class="list-group shadow-border dashboard-navigation-menu">
                         <a href="{{ route('home') }}" class="list-group-item no-border {{ isset($active) && $active == 'dashboard' ? 'active-link' : '' }}">Дом</a>
                         <a href="{{ route('courses.index') }}" class="list-group-item no-border {{ isset($active) && $active == 'courses' ? 'active-link' : '' }}">Курсы</a>
-                        <a href="{{ route('calls.index') }}" class="list-group-item no-border {{ isset($active) && $active == 'calls' ? 'active-link' : '' }}">Практика</a>
                         <a href="#" class="list-group-item no-border d-flex justify-content-between align-items-center">
                             Вокебулари <span class="badge badge-secondary badge-pill">Скоро</span></a>
                     </ul>
