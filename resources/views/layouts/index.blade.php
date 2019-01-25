@@ -267,318 +267,6 @@
 </section>
 <!-- End Features Area -->
 
-<!-- Start Feedback Area -->
-<section id="feedback" class="services-area ptb-100">
-    <div class="container">
-        <div class="section-title">
-            <span>Services</span>
-            <h3>We provide best service for you customers</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-
-        <div class="row">
-            <div class="col-lg-4 col-md-6">
-                <div class="single-services text-center">
-                    <i class="icofont-ruler-pencil"></i>
-                    <h3>Software Design</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6">
-                <div class="single-services text-center">
-                    <i class="icofont-laptop-alt"></i>
-                    <h3>Web Design</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6">
-                <div class="single-services text-center">
-                    <i class="icofont-brand-designfloat"></i>
-                    <h3>Graphic Design</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6">
-                <div class="single-services text-center">
-                    <i class="icofont-ssl-security"></i>
-                    <h3>Web Secuirity</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6">
-                <div class="single-services text-center">
-                    <i class="icofont-globe-alt"></i>
-                    <h3>Online Marketing</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6">
-                <div class="single-services text-center">
-                    <i class="icofont-support"></i>
-                    <h3>Helping Support</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End Services Area -->
-
-<!-- Start Join Area -->
-<section class="join-area bg-gray ptb-100">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 col-md-6">
-                <div class="join-img">
-                    <img src="assets/img/3.png" alt="img">
-                </div>
-            </div>
-
-            <div class="col-lg-6 col-md-6">
-                <div class="join-content">
-                    <h3>Overall 400k+ Our Clients Please Get Start Now</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-                    <a href="#" class="btn btn-primary">Join Now</a>
-                    <a href="#" class="btn btn-secondary">For Free trial</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End Join Area -->
-
-<!-- Start Vision Area -->
-<section class="vision-area ptb-100">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 col-md-12">
-                <div class="tab">
-                    <ul class="tabs">
-                        <li><a href="#">
-                                <i class="icofont-laptop"></i>
-                                <br>
-                                User Experience
-                            </a></li>
-
-                        <li><a href="#">
-                                <i class="icofont-ruler-pencil-alt-2"></i>
-                                <br>
-                                Product Design
-                            </a></li>
-
-                        <li><a href="#">
-                                <i class="icofont-marker-alt-1"></i>
-                                <br>
-                                Digital Marketing
-                            </a></li>
-
-                        <li><a href="#">
-                                <i class="icofont-light-bulb"></i>
-                                <br>
-                                Branding
-                            </a></li>
-
-                        <li><a href="#">
-                                <i class="icofont-laptop-alt"></i>
-                                <br>
-                                Development
-                            </a></li>
-
-                        <li><a href="#">
-                                <i class="icofont-infant-nipple"></i>
-                                <br>
-                                Marketing
-                            </a></li>
-                    </ul>
-
-                    <div class="tab_content">
-                        <div class="tabs_item">
-                            <div class="row">
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="tabs_item_content mt-0">
-                                        <h3>User Experience</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-                                        <ul>
-                                            <li><i class="icofont-ui-check"></i> Creative Design</li>
-                                            <li><i class="icofont-ui-check"></i> Retina Ready</li>
-                                            <li><i class="icofont-ui-check"></i> Modern Design</li>
-                                            <li><i class="icofont-ui-check"></i> Digital Marketing & Branding</li>
-                                        </ul>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="tabs_item_img">
-                                        <img src="assets/img/1.png" alt="img">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="tabs_item">
-                            <div class="row">
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="tabs_item_img">
-                                        <img src="assets/img/2.png" alt="img">
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="tabs_item_content mb-0">
-                                        <h3>Product Design</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-                                        <ul>
-                                            <li><i class="icofont-ui-check"></i> Creative Design</li>
-                                            <li><i class="icofont-ui-check"></i> Retina Ready</li>
-                                            <li><i class="icofont-ui-check"></i> Modern Design</li>
-                                            <li><i class="icofont-ui-check"></i> Digital Marketing & Branding</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="tabs_item">
-                            <div class="row">
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="tabs_item_content mt-0">
-                                        <h3>Digital Marketing</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-                                        <ul>
-                                            <li><i class="icofont-ui-check"></i> Creative Design</li>
-                                            <li><i class="icofont-ui-check"></i> Retina Ready</li>
-                                            <li><i class="icofont-ui-check"></i> Modern Design</li>
-                                            <li><i class="icofont-ui-check"></i> Digital Marketing & Branding</li>
-                                        </ul>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="tabs_item_img">
-                                        <img src="assets/img/3.png" alt="img">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="tabs_item">
-                            <div class="row">
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="tabs_item_img">
-                                        <img src="assets/img/1.png" alt="img">
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="tabs_item_content mb-0">
-                                        <h3>Branding</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-                                        <ul>
-                                            <li><i class="icofont-ui-check"></i> Creative Design</li>
-                                            <li><i class="icofont-ui-check"></i> Retina Ready</li>
-                                            <li><i class="icofont-ui-check"></i> Modern Design</li>
-                                            <li><i class="icofont-ui-check"></i> Digital Marketing & Branding</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="tabs_item">
-                            <div class="row">
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="tabs_item_content mt-0">
-                                        <h3>Development</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-                                        <ul>
-                                            <li><i class="icofont-ui-check"></i> Creative Design</li>
-                                            <li><i class="icofont-ui-check"></i> Retina Ready</li>
-                                            <li><i class="icofont-ui-check"></i> Modern Design</li>
-                                            <li><i class="icofont-ui-check"></i> Digital Marketing & Branding</li>
-                                        </ul>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="tabs_item_img">
-                                        <img src="assets/img/2.png" alt="img">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="tabs_item">
-                            <div class="row">
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="tabs_item_img">
-                                        <img src="assets/img/4.png" alt="img">
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="tabs_item_content">
-                                        <h3>Marketing</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-                                        <ul>
-                                            <li><i class="icofont-ui-check"></i> Creative Design</li>
-                                            <li><i class="icofont-ui-check"></i> Retina Ready</li>
-                                            <li><i class="icofont-ui-check"></i> Modern Design</li>
-                                            <li><i class="icofont-ui-check"></i> Digital Marketing & Branding</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End Vision Area -->
-
-<!-- Start How It Works Area -->
-<section class="how-works-area bg-gray ptb-100">
-    <div class="container">
-        <div class="section-title">
-            <h3>Как Это Работает</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-
-        <div class="row">
-            <div class="col-lg-4 col-md-6">
-                <div class="single-box with-line">
-                    <span>01.</span>
-                    <h3>Учи</h3>
-                    <p>В течении курса каждый день вы будете получать видео уроки с актуальной ифнормацей.</p>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6">
-                <div class="single-box with-line">
-                    <span>02.</span>
-                    <h3>Практикуй</h3>
-                    <p>В течении курса у вас есть возможность раз в 2-3 дня связыватся с преподователем для закрепления изученого материала.</p>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
-                <div class="single-box">
-                    <span>03.</span>
-                    <h3>Используй</h3>
-                    <p>Используй знания полученные через уроки и практику, и наслаждайся результатом!</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End How It Works Area -->
-
 <!-- Start Team Area -->
 <section id="team" class="team-area ptb-100">
     <div class="container">
@@ -678,6 +366,43 @@
     </div>
 </section>
 <!-- End Team Area -->
+
+<!-- Start How It Works Area -->
+<section class="how-works-area bg-gray ptb-100">
+    <div class="container">
+        <div class="section-title">
+            <h3>Как Это Работает</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="single-box with-line">
+                    <span>01.</span>
+                    <h3>Учи</h3>
+                    <p>В течении курса каждый день вы будете получать видео уроки с актуальной ифнормацей.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="single-box with-line">
+                    <span>02.</span>
+                    <h3>Практикуй</h3>
+                    <p>В течении курса у вас есть возможность раз в 2-3 дня связыватся с преподователем для закрепления изученого материала.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
+                <div class="single-box">
+                    <span>03.</span>
+                    <h3>Используй</h3>
+                    <p>Используй знания полученные через уроки и практику, и наслаждайся результатом!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End How It Works Area -->
 
 <!-- Start FAQ Area -->
 <section id="faq" class="faq-area ptb-100">
