@@ -148,15 +148,12 @@
 
             <div class="col-lg-6 col-md-6">
                 <div class="about-text mb-0">
-                    <span>.01</span>
-                    <h3>Get Started with our software</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-                    <ul>
-                        <li><i class="icofont-ui-check"></i> Creative Design</li>
-                        <li><i class="icofont-ui-check"></i> Retina Ready</li>
-                        <li><i class="icofont-ui-check"></i> Modern Design</li>
-                        <li><i class="icofont-ui-check"></i> Digital Marketing & Branding</li>
-                    </ul>
+                    <span>1</span>
+                    <h3>Видеоуроки</h3>
+                    <p>Каждый день ты будешь получать 4 английскийх слова, которые ты можешь использовать в предложениях, и которые тебе реально будут нужны для общения на английском.</p>
+                    <blockquote class="blockquote">
+                        <p class="mb-0">Каждый день ты будешь получать видео с произношением данных слов и предложений на английском языке (восприятие на слух очень важно)</p>
+                    </blockquote>
                 </div>
             </div>
         </div>
@@ -164,9 +161,9 @@
         <div class="row mt-100">
             <div class="col-lg-6 col-md-6">
                 <div class="about-text mt-0">
-                    <span>.02</span>
-                    <h3>Solve your problem faster</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+                    <span>2</span>
+                    <h3>Практика</h3>
+                    <p>Каждые 2-3 дня мы будем с тобой созваниваться и общаться на английском языке, не важно, если у тебя он нулевой, и максимум, что ты можешь сказать, это <b>"май нейм из Хуан"</b>. Тебе придеться выйти из зоны комфорта. Но главное - начать!</p>
                     <ul>
                         <li><i class="icofont-ui-check"></i> Creative Design</li>
                         <li><i class="icofont-ui-check"></i> Retina Ready</li>
@@ -192,7 +189,7 @@
 
             <div class="col-lg-6 col-md-6">
                 <div class="about-text mb-0">
-                    <span>.03</span>
+                    <span>3</span>
                     <h3>All In one for all products</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
                     <blockquote class="blockquote">
@@ -205,7 +202,7 @@
         <div class="row mt-100">
             <div class="col-lg-6 col-md-6">
                 <div class="about-text mt-0">
-                    <span>.04</span>
+                    <span>4</span>
                     <h3>We provide proffesional staff</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
 
