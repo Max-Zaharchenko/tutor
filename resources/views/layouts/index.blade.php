@@ -76,8 +76,8 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-6">
                         <div class="main-banner-content">
-                            <h1>Master your English</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+                            <h1>Подними свой Английский на новый уровень</h1>
+                            <p>Все, что тебе надо - это делать больше, чем другие, знать больше, чем другие. Это будет выделять тебе из толпы и ты 100% станешь успешным</p>
                             <a href="#about" class="btn btn-primary">Get Started</a>
                             <a href="https://www.youtube.com/watch?v=5bO0aYjVpmo" class="btn btn-secondary popup-youtube"><i class="icofont-ui-play"></i> Демо</a>
                         </div>
@@ -226,46 +226,40 @@
 <!-- End About Area -->
 
 <!-- Start Features Area -->
-<section id="features" class="features-area bg-gray ptb-100">
+<section id="features" class="testimonials-area bg-gray ptb-100">
+    <div class="bg-top"></div>
+    <div class="bg-bottom"></div>
+
     <div class="container">
         <div class="section-title">
-            <span>Features</span>
-            <h3>Our Amazing Features</h3>
+            <h3>Отзывы</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
 
         <div class="row">
             <div class="features-slides">
                 <div class="col-lg-12 col-md-12">
-                    <div class="single-features">
-                        <i class="icofont-hand-drag1"></i>
-                        <h3>Drag and drop</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-                    </div>
+                    <img src="{{ asset('/assets/img/reviews/5YGrL389bAWU6H0s7HwJNzrilqqk1vYt.jpg') }}" alt="">
                 </div>
 
                 <div class="col-lg-12 col-md-12">
-                    <div class="single-features">
-                        <i class="icofont-diamond"></i>
-                        <h3>Fully customizable</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-                    </div>
+                    <img src="{{ asset('/assets/img/reviews/789S19zQE9Ketrp1gWVs12UqQpFRkBn8.jpg') }}" alt="">
                 </div>
 
                 <div class="col-lg-12 col-md-12">
-                    <div class="single-features">
-                        <i class="icofont-responsive"></i>
-                        <h3>Fully responsive</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-                    </div>
+                    <img src="{{ asset('/assets/img/reviews/CcxnJhJXOFG1EiHJiiHkP1n0ZgEkvGJz.jpg') }}" alt="">
                 </div>
 
                 <div class="col-lg-12 col-md-12">
-                    <div class="single-features">
-                        <i class="icofont-rocket"></i>
-                        <h3>App integration</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-                    </div>
+                    <img src="{{ asset('/assets/img/reviews/iM30ywR78KYQOvXh5zfsGecDAE1FbFQu.jpg') }}" alt="">
+                </div>
+
+                <div class="col-lg-12 col-md-12">
+                    <img src="{{ asset('/assets/img/reviews/ScfQwnN7Eplc2M2o4kU7evIiWv7M1UCN.jpg') }}" alt="">
+                </div>
+
+                <div class="col-lg-12 col-md-12">
+                    <img src="{{ asset('/assets/img/reviews/t2b9OBqdbLPhgr4QEmdWwtkzaEQ1GjPh.jpg') }}" alt="">
                 </div>
             </div>
         </div>
@@ -548,52 +542,11 @@
 </section>
 <!-- End Vision Area -->
 
-<!-- Start Fun Facts Area -->
-<section class="funfacts-area ptb-100">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-3 col-md-6 col-sm-6">
-                <div class="fun-fact">
-                    <i class="icofont-users-alt-5"></i>
-                    <h3><span class="count">500</span>K</h3>
-                    <p>Lovely Users</p>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6 col-sm-6">
-                <div class="fun-fact">
-                    <i class="icofont-download"></i>
-                    <h3><span class="count">450</span>K</h3>
-                    <p>Download</p>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6 col-sm-6">
-                <div class="fun-fact">
-                    <i class="icofont-search-document"></i>
-                    <h3><span class="count">1000</span>K</h3>
-                    <p>Resource</p>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6 col-sm-6">
-                <div class="fun-fact">
-                    <i class="icofont-star-shape"></i>
-                    <h3><span class="count">5.00</span></h3>
-                    <p>Average Rating</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End Fun Facts Area -->
-
 <!-- Start How It Works Area -->
 <section class="how-works-area bg-gray ptb-100">
     <div class="container">
         <div class="section-title">
-            <span>Works</span>
-            <h3>How It Works</h3>
+            <h3>Как Это Работает</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
 
@@ -601,24 +554,24 @@
             <div class="col-lg-4 col-md-6">
                 <div class="single-box with-line">
                     <span>01.</span>
-                    <h3>Design</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                    <h3>Учи</h3>
+                    <p>В течении курса каждый день вы будете получать видео уроки с актуальной ифнормацей.</p>
                 </div>
             </div>
 
             <div class="col-lg-4 col-md-6">
                 <div class="single-box with-line">
                     <span>02.</span>
-                    <h3>Develop</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                    <h3>Практикуй</h3>
+                    <p>В течении курса у вас есть возможность раз в 2-3 дня связыватся с преподователем для закрепления изученого материала.</p>
                 </div>
             </div>
 
             <div class="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
                 <div class="single-box">
                     <span>03.</span>
-                    <h3>Product</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                    <h3>Используй</h3>
+                    <p>Используй знания полученные через уроки и практику, и наслаждайся результатом!</p>
                 </div>
             </div>
         </div>
@@ -630,9 +583,8 @@
 <section id="team" class="team-area ptb-100">
     <div class="container">
         <div class="section-title">
-            <span>Team</span>
-            <h3>Our Team Members</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <h3>Наша Команда</h3>
+            <p>Каждый день мы трудимся и строим продукт, который приносил бы больше всего <b>результата</b>.</p>
         </div>
 
         <div class="row">
@@ -727,135 +679,6 @@
 </section>
 <!-- End Team Area -->
 
-<!-- Start Testimonials Area -->
-<section class="testimonials-area bg-gray ptb-100">
-
-    <div class="bg-top"></div>
-    <div class="bg-bottom"></div>
-
-    <div class="container">
-        <div class="section-title">
-            <span>Testimonials</span>
-            <h3>What Our Users Say</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-
-        <div class="row">
-            <div class="testimonials-slides">
-                <div class="col-lg-12 col-md-12">
-                    <div class="testimonials-item">
-                        <div class="client-info">
-                            <div class="img">
-                                <img src="assets/img/client-avatar1.jpg" alt="client">
-                            </div>
-
-                            <div class="client-title">
-                                <h4>John Smith</h4>
-                                <span>Web Developer</span>
-                            </div>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-
-                        <i class="icofont-quote-left"></i>
-                    </div>
-                </div>
-
-                <div class="col-lg-12 col-md-12">
-                    <div class="testimonials-item">
-                        <div class="client-info">
-                            <div class="img">
-                                <img src="assets/img/client-avatar2.jpg" alt="client">
-                            </div>
-
-                            <div class="client-title">
-                                <h4>John Doe</h4>
-                                <span>Web Developer</span>
-                            </div>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-
-                        <i class="icofont-quote-left"></i>
-                    </div>
-                </div>
-
-                <div class="col-lg-12 col-md-12">
-                    <div class="testimonials-item">
-                        <div class="client-info">
-                            <div class="img">
-                                <img src="assets/img/client-avatar3.jpg" alt="client">
-                            </div>
-
-                            <div class="client-title">
-                                <h4>Steven Smith</h4>
-                                <span>Web Developer</span>
-                            </div>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-
-                        <i class="icofont-quote-left"></i>
-                    </div>
-                </div>
-
-                <div class="col-lg-12 col-md-12">
-                    <div class="testimonials-item">
-                        <div class="client-info">
-                            <div class="img">
-                                <img src="assets/img/client-avatar3.jpg" alt="client">
-                            </div>
-
-                            <div class="client-title">
-                                <h4>Steven</h4>
-                                <span>Web Developer</span>
-                            </div>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-
-                        <i class="icofont-quote-left"></i>
-                    </div>
-                </div>
-
-                <div class="col-lg-12 col-md-12">
-                    <div class="testimonials-item">
-                        <div class="client-info">
-                            <div class="img">
-                                <img src="assets/img/client-avatar1.jpg" alt="client">
-                            </div>
-
-                            <div class="client-title">
-                                <h4>Walker</h4>
-                                <span>Web Developer</span>
-                            </div>
-                        </div>
-
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-
-                        <i class="icofont-quote-left"></i>
-                    </div>
-                </div>
-
-                <div class="col-lg-12 col-md-12">
-                    <div class="testimonials-item">
-                        <div class="client-info">
-                            <div class="img">
-                                <img src="assets/img/client-avatar2.jpg" alt="client">
-                            </div>
-
-                            <div class="client-title">
-                                <h4>David Warner</h4>
-                                <span>Web Developer</span>
-                            </div>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-
-                        <i class="icofont-quote-left"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End Testimonials Area -->
-
 <!-- Start FAQ Area -->
 <section id="faq" class="faq-area ptb-100">
     <div class="container">
@@ -916,12 +739,11 @@
 <section id="pricing" class="pricing-area bg-gray ptb-100">
     <div class="container">
         <div class="section-title">
-            <span>Pricing</span>
-            <h3>Our Packages</h3>
+            <h3>Цены</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
 
-        <div class="row">
+        <div class="row d-flex justify-content-center">
             <div class="col-lg-4 col-md-6">
                 <div class="pricing-table">
                     <span class="icon"><i class="icofont-globe"></i></span>
@@ -958,61 +780,10 @@
                 </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
-                <div class="pricing-table">
-                    <span class="icon"><i class="icofont-globe"></i></span>
-                    <div class="pricing-table-header">
-                        <h3 class="title">Expert Plan</h3>
-                        <span class="price-value">$69<b>/mon</b></span>
-                    </div>
-                    <ul class="pricing-content">
-                        <li>Unlimited Reservations</li>
-                        <li>6 Clients and Products</li>
-                        <li>Housekeeping Status</li>
-                        <li>Invoicing and Payments</li>
-                        <li>Data Security and Backups</li>
-                    </ul>
-                    <a href="#" class="btn btn-primary">Select Plan</a>
-                </div>
-            </div>
         </div>
     </div>
 </section>
 <!-- End Pricing Area -->
-
-<!-- Start Partner Area -->
-<div class="partner-area ptb-100">
-    <div class="container">
-        <div class="row">
-            <div class="partner-slides">
-                <div class="col-lg-12 col-md-12">
-                    <a href="#"><img src="assets/img/partner-1.jpg" alt="partner"></a>
-                </div>
-
-                <div class="col-lg-12 col-md-12">
-                    <a href="#"><img src="assets/img/partner-2.jpg" alt="partner"></a>
-                </div>
-
-                <div class="col-lg-12 col-md-12">
-                    <a href="#"><img src="assets/img/partner-3.jpg" alt="partner"></a>
-                </div>
-
-                <div class="col-lg-12 col-md-12">
-                    <a href="#"><img src="assets/img/partner-4.jpg" alt="partner"></a>
-                </div>
-
-                <div class="col-lg-12 col-md-12">
-                    <a href="#"><img src="assets/img/partner-5.jpg" alt="partner"></a>
-                </div>
-
-                <div class="col-lg-12 col-md-12">
-                    <a href="#"><img src="assets/img/partner-6.jpg" alt="partner"></a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- End Partner Area -->
 
 <!-- Start Subscribe Area-->
 <section class="subscribe-area ptb-100">
@@ -1098,7 +869,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-7 col-md-7">
-                    <p>Copyright <i class="icofont-copyright"></i> 2018 All Rights Reserved.</p>
+                    <p>Copyright <i class="icofont-copyright"></i> 2019 All Rights Reserved.</p>
                 </div>
 
                 <div class="col-lg-5 col-md-5">
