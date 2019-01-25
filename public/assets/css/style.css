@@ -1341,6 +1341,11 @@ p {
 /* ==============
     Start Pricing CSS 
 ==================================== */
+.pricing-area {
+  background-image: url(../../assets/img/pattern-4.png);
+  background-attachment: fixed;
+}
+
 .pricingTable {
   padding-bottom: 30px;
   background: #ffffff;

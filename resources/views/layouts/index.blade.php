@@ -50,11 +50,8 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#about">О Нас</a></li>
-                <li class="nav-item"><a class="nav-link" href="#features">Фичи</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">О Курсе</a></li>
                 <li class="nav-item"><a class="nav-link" href="#feedback">Отзывы</a></li>
-                <li class="nav-item"><a class="nav-link" href="#team">Команда</a></li>
-                <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
                 <li class="nav-item"><a class="nav-link" href="#pricing">Цены</a></li>
                 <li class="nav-item"><a class="nav-link" href="contact.html">Обратная Связь</a></li>
             </ul>
@@ -103,8 +100,7 @@
 <section id="about" class="about-area ptb-100">
     <div class="container">
         <div class="section-title">
-            <span>About Us</span>
-            <h3>We provide best service for you customers</h3>
+            <h3>Информация О Курсе</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
 
@@ -134,7 +130,7 @@
 
             <div class="col-lg-6 col-md-12">
                 <div class="about-img">
-                    <img src="assets/img/about.png" alt="about">
+                    <img src="assets/img/about-i.png" alt="about">
                 </div>
             </div>
         </div>
@@ -142,14 +138,14 @@
         <div class="row mt-100">
             <div class="col-lg-6 col-md-6">
                 <div class="img">
-                    <img src="assets/img/1.png" alt="img">
+                    <img src="assets/img/video.png" alt="img">
                 </div>
             </div>
 
             <div class="col-lg-6 col-md-6">
                 <div class="about-text mb-0">
                     <span>1</span>
-                    <h3>Видеоуроки</h3>
+                    <h3>Изучай</h3>
                     <p>Каждый день ты будешь получать 4 английскийх слова, которые ты можешь использовать в предложениях, и которые тебе реально будут нужны для общения на английском.</p>
                     <blockquote class="blockquote">
                         <p class="mb-0">Каждый день ты будешь получать видео с произношением данных слов и предложений на английском языке (восприятие на слух очень важно)</p>
@@ -162,7 +158,7 @@
             <div class="col-lg-6 col-md-6">
                 <div class="about-text mt-0">
                     <span>2</span>
-                    <h3>Практика</h3>
+                    <h3>Практикуй</h3>
                     <p>Каждые 2-3 дня мы будем с тобой созваниваться и общаться на английском языке, не важно, если у тебя он нулевой, и максимум, что ты можешь сказать, это <b>"май нейм из Хуан"</b>. Тебе придеться выйти из зоны комфорта. Но главное - начать!</p>
                     <ul>
                         <li><i class="icofont-ui-check"></i> Creative Design</li>
@@ -175,7 +171,7 @@
 
             <div class="col-lg-6 col-md-6">
                 <div class="img">
-                    <img src="assets/img/2.png" alt="img">
+                    <img src="assets/img/call.png" alt="img">
                 </div>
             </div>
         </div>
@@ -183,47 +179,25 @@
         <div class="row mt-100">
             <div class="col-lg-6 col-md-6">
                 <div class="img">
-                    <img src="assets/img/3.png" alt="img">
+                    <img src="assets/img/practice.png" alt="img">
                 </div>
             </div>
 
             <div class="col-lg-6 col-md-6">
                 <div class="about-text mb-0">
                     <span>3</span>
-                    <h3>All In one for all products</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-                    <blockquote class="blockquote">
-                        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                    </blockquote>
+                    <h3>Используй</h3>
+                    <p>Используй усвоенные знания в повседненой жизни.</p>
                 </div>
             </div>
         </div>
 
-        <div class="row mt-100">
-            <div class="col-lg-6 col-md-6">
-                <div class="about-text mt-0">
-                    <span>4</span>
-                    <h3>We provide proffesional staff</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-
-                    <blockquote class="blockquote">
-                        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                    </blockquote>
-                </div>
-            </div>
-
-            <div class="col-lg-6 col-md-6">
-                <div class="img">
-                    <img src="assets/img/4.png" alt="img">
-                </div>
-            </div>
-        </div>
     </div>
 </section>
 <!-- End About Area -->
 
 <!-- Start Features Area -->
-<section id="features" class="testimonials-area bg-gray ptb-100">
+<section id="feedback" class="testimonials-area bg-gray ptb-100">
     <div class="bg-top"></div>
     <div class="bg-bottom"></div>
 
@@ -265,7 +239,7 @@
 <!-- End Features Area -->
 
 <!-- Start Pricing Area -->
-<section id="pricing" class="pricing-area bg-gray ptb-100">
+<section id="pricing" class="pricing-area ptb-100">
     <div class="container">
         <div class="section-title">
             <h3>Цены</h3>
@@ -303,7 +277,7 @@
                         <li>6 Clients and Products</li>
                         <li>Housekeeping Status</li>
                         <li>Invoicing and Payments</li>
-                        <li>Data Security and Backups</li>
+                        <li>Data Security and Backups</li>All In one for all products
                     </ul>
                     <a href="#" class="btn btn-primary">Select Plan</a>
                 </div>
