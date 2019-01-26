@@ -394,6 +394,8 @@ p {
 .main-banner {
   height: 680px;
   position: relative;
+  background-image: url(../../assets/img/pattern-4.png);
+  background-attachment: fixed;
 }
 
 .main-banner-content {

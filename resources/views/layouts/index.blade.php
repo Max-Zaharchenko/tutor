@@ -81,7 +81,7 @@
     </div>
 
 
-    <div class="bg-bottom"></div>
+    {{--<div class="bg-bottom"></div>--}}
 
 </div>
 <!-- End Main Banner Area -->
