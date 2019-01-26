@@ -28,16 +28,6 @@
 </head>
 
 <body data-spy="scroll" data-offset="70">
-<!-- Start Preloader -->
-<div class="preloader">
-    <div class="loader">
-        <div class="spinner">
-            <div class="double-bounce1"></div>
-            <div class="double-bounce2"></div>
-        </div>
-    </div>
-</div>
-<!-- End Preloader -->
 
 <!-- Start Navbar Area -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -63,7 +53,7 @@
 <!-- Start Main Banner Area -->
 <div id="home" class="main-banner">
 
-    <div class="creative-bg"></div>
+    {{--<div class="creative-bg"></div>--}}
 
     <div class="pattern"></div>
 
@@ -75,14 +65,14 @@
                         <div class="main-banner-content">
                             <h1>Подними свой Английский на новый уровень</h1>
                             <p>Все, что тебе надо - это делать больше, чем другие, знать больше, чем другие. Это будет выделять тебе из толпы и ты 100% станешь успешным</p>
-                            <a href="#about" class="btn btn-primary">Get Started</a>
-                            <a href="https://www.youtube.com/watch?v=5bO0aYjVpmo" class="btn btn-secondary popup-youtube"><i class="icofont-ui-play"></i> Демо</a>
+                            <a href="#about" class="btn btn-primary btn-get-started">Get Started</a>
+                            <a href="https://www.youtube.com/watch?v=5bO0aYjVpmo" class="btn btn-primary popup-youtube"><i class="icofont-ui-play"></i> Демо</a>
                         </div>
                     </div>
 
                     <div class="col-lg-6 col-md-6">
                         <div class="banner-img">
-                            <img src="assets/img/main-banner.png" alt="img">
+                            <img src="assets/img/zack.png" alt="img">
                         </div>
                     </div>
                 </div>
@@ -197,7 +187,7 @@
 <!-- End About Area -->
 
 <!-- Start Features Area -->
-<section id="feedback" class="testimonials-area bg-gray ptb-100">
+<section id="feedback" class="testimonials-area bg-yellow ptb-100">
     <div class="bg-top"></div>
     <div class="bg-bottom"></div>
 
@@ -298,9 +288,10 @@
         <div class="row">
             <div class="col-lg-12 col-md-12">
                 <div class="newsletter">
-                    <h4>Subscribe for the latest <span>ZACK</span>THE<span>TEACHER</span> Updates</h4>
+                    <h4>Заполните форму и Зак лично вам передзвонит</h4>
                     <form class="newsletter-form" data-toggle="validator">
-                        <input type="email" class="form-control" placeholder="Your Email Address" name="EMAIL" required autocomplete="off">
+                        <input type="text" class="form-control" placeholder="Имя" name="name" required autocomplete="off">
+                        <input type="text" class="form-control mt-2" placeholder="Номер Телефона" name="phone_number" required autocomplete="off">
                         <button class="btn btn-primary" type="submit">Subscribe</button>
                         <div id="validator-newsletter" class="form-result"></div>
                     </form>
@@ -316,58 +307,6 @@
 
 <!-- Start Footer Area -->
 <footer class="footer-area ptb-100">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-3 col-md-6">
-                <div class="single-footer">
-                    <h4 class="logo"><a href="#">ZACK<span>THE</span>TEACHER</a></h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut. sed do eiusmod tempor incididunt ut, tempor incididunt ut.</p>
-                    <a href="#" class="btn btn-primary">Read More</a>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6">
-                <div class="single-footer">
-                    <h3>Useful Links</h3>
-                    <ul>
-                        <li><a href="#"><i class="icofont-double-right"></i> Home</a></li>
-                        <li><a href="#"><i class="icofont-double-right"></i> Features</a></li>
-                        <li><a href="#"><i class="icofont-double-right"></i> About</a></li>
-                        <li><a href="#"><i class="icofont-double-right"></i> Services</a></li>
-                        <li><a href="#"><i class="icofont-double-right"></i> Blog</a></li>
-                        <li><a href="#"><i class="icofont-double-right"></i> Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6">
-                <div class="single-footer">
-                    <h3>Support</h3>
-                    <ul>
-                        <li><a href="#"><i class="icofont-double-right"></i> Career</a></li>
-                        <li><a href="#"><i class="icofont-double-right"></i> Support</a></li>
-                        <li><a href="#"><i class="icofont-double-right"></i> Resource</a></li>
-                        <li><a href="#"><i class="icofont-double-right"></i> Strategy</a></li>
-                        <li><a href="#"><i class="icofont-double-right"></i> FAQ</a></li>
-                        <li><a href="#"><i class="icofont-double-right"></i> Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6">
-                <div class="single-footer">
-                    <h3>Contact Info</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <ul class="contact-info">
-                        <li><i class="icofont-google-map"></i> 2750 Quadra Street , Park Area, Victoria, Canada.</li>
-                        <li><i class="icofont-phone"></i> +7 921 952-01-18</li>
-                        <li><i class="icofont-envelope"></i> support@zacktheteacher.ru</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <div class="copyright-area">
         <div class="container">
             <div class="row">

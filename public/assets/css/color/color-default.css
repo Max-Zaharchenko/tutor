@@ -1,5 +1,5 @@
 a {
-  color: #506CEA;
+  color: #f06334;
 }
 
 .bg-gray {
@@ -7,7 +7,7 @@ a {
 }
 
 .section-title span {
-  color: #506CEA;
+  color: #f06334;
 }
 
 .section-title h3::before {
@@ -15,35 +15,55 @@ a {
 }
 
 .owl-theme .owl-nav [class*="owl-"] {
-  color: #506CEA;
+  color: #f06334;
 }
 
 .owl-theme .owl-nav [class*="owl-"]:hover {
-  background: #506CEA;
+  background: #f06334;
 }
 
 .btn-primary {
-  background-color: #506CEA;
-  border-color: #506CEA;
+  background-color: #f0974d;
+  border-color: #f0974d;
 }
 
 .btn-primary.disabled, .btn-primary:disabled {
+  background-color: #f0974d;
+  border-color: #f0974d;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle {
+  background-color: #f06334;
+  border-color: #f06334;
+}
+
+.btn-primary:hover {
+  background-color: #f06334;
+  border-color: #f06334;
+}
+
+.btn-get-started {
   background-color: #506CEA;
   border-color: #506CEA;
 }
 
-.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle {
+.btn-get-started.disabled, .btn-primary:disabled {
+  background-color: #506CEA;
+  border-color: #506CEA;
+}
+
+.btn-get-started:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle {
   background-color: #6993ff;
   border-color: #6993ff;
 }
 
-.btn-primary:hover {
+.btn-get-started:hover {
   background-color: #6993ff;
   border-color: #6993ff;
 }
 
 .double-bounce1, .double-bounce2 {
-  background-color: #506CEA;
+  background-color: #f06334;
 }
 
 .navbar-brand span {
@@ -55,7 +75,7 @@ a {
 }
 
 .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
-  color: #506CEA;
+  color: #f06334;
 }
 
 .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
@@ -63,19 +83,19 @@ a {
 }
 
 .creative-bg {
-  background: #506CEA;
+  background: #f0974d;
 }
 
 .creative-bg-two {
-  background: #506CEA;
+  background: #f06334;
 }
 
 .single-features:hover {
-  background: #506CEA;
+  background: #f06334;
 }
 
 .single-features i {
-  color: #506CEA;
+  color: #f06334;
 }
 
 .about-content ul li i {
@@ -83,169 +103,174 @@ a {
 }
 
 .about-text ul li i {
-  color: #506CEA;
+  color: #f06334;
 }
 
 .about-text span {
-  background: rgba(88, 130, 253, 0.8);
+  background: #f06334;
 }
 
 .about-text .blockquote {
-  background: rgba(88, 130, 253, 0.4);
+  background: #f0d081;
 }
 
 .single-services:hover {
-  background: #506CEA;
+  background: #f06334;
 }
 
 .single-services i {
-  background: #506CEA;
+  background: #f06334;
 }
 
 .single-services:hover i {
-  color: #506CEA;
+  color: #f06334;
 }
 
 .tabs a:hover i, .tabs .current a i {
-  background: #506CEA;
+  background: #f06334;
 }
 
 .tabs_item_content ul li i {
-  color: #506CEA;
+  color: #f06334;
 }
 
 .tabs a:hover, .tabs .current a {
-  color: #506CEA;
+  color: #f06334;
 }
 
 .funfacts-area::before {
-  background: #506CEA;
+  background: #f06334;
 }
 
 .funFact i {
-  color: #506CEA;
+  color: #f06334;
 }
 
 .fun-fact i {
-  color: #506CEA;
+  color: #f06334;
 }
 
 .single-box:hover span {
-  background: #506CEA;
+  background: #f06334;
 }
 
 .our-team .social li a {
-  color: #506CEA;
+  color: #f06334;
 }
 
 .our-team .social li a:hover {
-  background: #506CEA;
+  background: #f06334;
 }
 
 .single-team .pic::after {
-  border: 2px solid #506CEA;
+  border: 2px solid #f06334;
 }
 
 .single-team .social-links li a:hover {
-  background: #506CEA;
-  border-color: #506CEA;
+  background: #f06334;
+  border-color: #f06334;
 }
 
 .single-team .team-content {
-  border-top: 2px solid #506CEA;
+  border-top: 2px solid #f06334;
 }
 
 .testimonials-item:hover {
-  background: #506CEA;
+  background: #f06334;
 }
 
 .client-info .client-title span {
-  color: #506CEA;
+  color: #f06334;
 }
 
 .accordion .accordion-title {
-  background: #506CEA;
+  background: #f06334;
 }
 
 .pricingTable .title {
-  background: #506CEA;
+  background: #f06334;
 }
 
 .pricingTable:hover .price-value {
-  background: #506CEA;
+  background: #f06334;
 }
 
 .pricing-table:hover .icon {
-  background: #506CEA;
+  background: #f06334;
 }
 
 .pricing-table .pricing-table-header {
-  background: #506CEA;
+  background: #f0974d;
 }
 
 .pricing-table .icon {
-  color: #506CEA;
+  color: #f06334;
 }
 
 .partner-area .owl-item img {
-  border: 1px solid #506CEA;
+  border: 1px solid #f06334;
 }
 
 .subscribe-area {
-  background: #506CEA;
+  background: #f0974d;
 }
 
 .newsletter h4 span {
-  color: #506CEA;
+  color: #f06334;
 }
 
 .page-title {
-  background: #506CEA;
+  background: #f06334;
 }
 
 .contact-box .icon {
-  border: 1px dashed #506CEA;
-  color: #506CEA;
+  border: 1px dashed #f06334;
+  color: #f06334;
 }
 
 .contact-box:hover .icon {
-  background: #506CEA;
+  background: #f06334;
 }
 
 .contact-box .content p a:hover {
-  color: #506CEA;
+  color: #f06334;
 }
 
 .single-footer .logo a span {
-  color: #506CEA;
+  color: #f06334;
 }
 
 .single-footer ul li a:hover {
-  color: #506CEA;
+  color: #f06334;
 }
 
 .single-footer .contact-info li i {
-  color: #506CEA;
+  color: #f06334;
 }
 
 .copyright-area ul li a {
-  border: 1px solid #506CEA;
+  border: 1px solid #f06334;
 }
 
 .copyright-area ul li a:hover {
-  background: #506CEA;
-  border-color: #506CEA;
+  background: #f06334;
+  border-color: #f06334;
 }
 
 .go-top:hover {
-  background: #506CEA;
+  background: #f06334;
 }
 
 .navbar-light .navbar-toggler {
-  border-color: #506CEA;
+  border-color: #f06334;
 }
 
 .navbar-light .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(88, 130, 253, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
+
+.bg-yellow {
+  background-color: #e6e1d0;
+}
+
 /*# sourceMappingURL=color-default.css.map */
