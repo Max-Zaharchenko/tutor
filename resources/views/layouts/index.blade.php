@@ -63,7 +63,7 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-6">
                         <div class="main-banner-content">
-                            <h1>Подними свой английский - Заговори на английском за 2 месяца</h1>
+                            <h1>Заговори на английском за 2 месяца</h1>
                             <p>Все мы очень занятые люди и понимая как ценно время, я придумал  уникальный курс с которым Все что вам нужно  это уделять по 10-15 мин в день на изучения и закрепления материала
                                 Теперь не надо смотреть часовые скучные уроки, и тратить огромные деньги на репетиров
                                 Если у вас есть желания получить реальный результат в английском языке- мой курс именно то что вам нужно</p>
@@ -106,6 +106,8 @@
                         <li><i class="icofont-ui-check"></i> Общение с единомышленниками, которые, так же как и ты, хотят выучить английский</li>
                         <li><i class="icofont-ui-check"></i> Разговорный барьер будет разрушен</li>
                         <li><i class="icofont-ui-check"></i> Уникальная методика изучения</li>
+                        <li><i class="icofont-ui-check"></i> 24/7 вы можете задавать любые интересующие вас вопросы о английском
+                            Наши специалисты будут рады вам на них ответить</li>
                     </ul>
 
                 </div>
@@ -129,7 +131,9 @@
                 <div class="about-text mb-0">
                     <span>1</span>
                     <h3>Изучай</h3>
-                    <p>Каждый день ты будешь получать 4 английскийх слова, которые ты можешь использовать в предложениях, и которые тебе реально будут нужны для общения на английском.</p>
+                    <p>Каждый день ты будешь получать 4 новых английский слова, которое тебя РЕАЛЬНО понадобятся в общение на английском языке и преложения в которых они используются
+                        Плюс+ мое видео с произношением этих слов и предложений
+                        (восприятие на слух очень важно)</p>
                     <blockquote class="blockquote">
                         <p class="mb-0">Каждый день ты будешь получать видео с произношением данных слов и предложений на английском языке (восприятие на слух очень важно)</p>
                     </blockquote>
@@ -142,12 +146,15 @@
                 <div class="about-text mt-0">
                     <span>2</span>
                     <h3>Практикуй</h3>
-                    <p>Каждые 2-3 дня мы будем с тобой созваниваться и общаться на английском языке, не важно, если у тебя он нулевой, и максимум, что ты можешь сказать, это <b>"май нейм из Хуан"</b>. Тебе придеться выйти из зоны комфорта. Но главное - начать!</p>
+                    <p>Каждый 3тий день мы будем созваниваться с вами один-на один и общаться на английском языке, не важно какой у вас уровень, даже если максимум что вы можете сказать, это «май нейм из Хуан»
+                        Вам прийдется выйти из зоны комфорта, но я сделаю это максимально комфортным для вас:)
+                        Главное-начать!</p>
                     <ul>
-                        <li><i class="icofont-ui-check"></i> Creative Design</li>
-                        <li><i class="icofont-ui-check"></i> Retina Ready</li>
-                        <li><i class="icofont-ui-check"></i> Modern Design</li>
-                        <li><i class="icofont-ui-check"></i> Digital Marketing & Branding</li>
+                        <li><i class="icofont-ui-check"></i> Созвон длиться в среднем 5 мин, тем самым не забирая у вас много времени </li>
+                        <li><i class="icofont-ui-check"></i> Общаемся на актуальные темы, и играем в ролевые игры из жизни</li>
+                        <li><i class="icofont-ui-check"></i> Подстраиваюсь под ваш уровень английского и делаю разговор максимально комфортным для ВАС</li>
+                        <li><i class="icofont-ui-check"></i> После каждого разговора я буду скидывать  новые слова которые вы не знали в момент нашего разговора </li>
+                        <li><i class="icofont-ui-check"></i> Практикой которая будет во время созвонов мы разрушим ваш разговорный барьер </li>
                     </ul>
                 </div>
             </div>
@@ -155,22 +162,6 @@
             <div class="col-lg-6 col-md-6">
                 <div class="img">
                     <img src="assets/img/call.png" alt="img">
-                </div>
-            </div>
-        </div>
-
-        <div class="row mt-100">
-            <div class="col-lg-6 col-md-6">
-                <div class="img">
-                    <img src="assets/img/practice.png" alt="img">
-                </div>
-            </div>
-
-            <div class="col-lg-6 col-md-6">
-                <div class="about-text mb-0">
-                    <span>3</span>
-                    <h3>Используй</h3>
-                    <p>Используй усвоенные знания в повседненой жизни.</p>
                 </div>
             </div>
         </div>
@@ -187,7 +178,7 @@
     <div class="container">
         <div class="section-title">
             <h3>Отзывы</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>Более 150 счастливых учеников с реальными результатами</p>
         </div>
 
         <div class="row">
@@ -225,8 +216,8 @@
 <section id="pricing" class="pricing-area ptb-100">
     <div class="container">
         <div class="section-title">
-            <h3>Цены</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <h3>Цена</h3>
+            <p>Я уверен что пройдя 2х месячный курс, вы заговорите на английском, а если нет, я с радостью верну вам ваши деньги </p>
         </div>
 
         <div class="row d-flex justify-content-center">
@@ -234,8 +225,8 @@
                 <div class="pricing-table">
                     <span class="icon"><i class="icofont-globe"></i></span>
                     <div class="pricing-table-header">
-                        <h3 class="title">Basic Plan</h3>
-                        <span class="price-value">$29<b>/mon</b></span>
+                        <h3 class="title">1 месяц</h3>
+                        <span class="price-value">$79</span>
                     </div>
                     <ul class="pricing-content">
                         <li>Unlimited Reservations</li>
@@ -243,6 +234,42 @@
                         <li>Housekeeping Status</li>
                         <li>Invoicing and Payments</li>
                         <li>Data Security and Backups</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">Select Plan</a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="pricing-table">
+                    <span class="icon"><i class="icofont-globe"></i></span>
+                    <div class="pricing-table-header">
+                        <h3 class="title">2 месяца</h3>
+                        <span class="price-value">$49<b>/mon</b></span>
+                    </div>
+                    <ul class="pricing-content">
+                        <li>Unlimited Reservations</li>
+                        <li>6 Clients and Products</li>
+                        <li>Housekeeping Status</li>
+                        <li>Invoicing and Payments</li>
+                        <li>Data Security and Backups</li>All In one for all products
+                    </ul>
+                    <a href="#" class="btn btn-primary">Select Plan</a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="pricing-table">
+                    <span class="icon"><i class="icofont-globe"></i></span>
+                    <div class="pricing-table-header">
+                        <h3 class="title">3 месяца</h3>
+                        <span class="price-value">$49<b>/mon</b></span>
+                    </div>
+                    <ul class="pricing-content">
+                        <li>Unlimited Reservations</li>
+                        <li>6 Clients and Products</li>
+                        <li>Housekeeping Status</li>
+                        <li>Invoicing and Payments</li>
+                        <li>Data Security and Backups</li>All In one for all products
                     </ul>
                     <a href="#" class="btn btn-primary">Select Plan</a>
                 </div>
