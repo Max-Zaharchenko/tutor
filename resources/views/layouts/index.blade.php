@@ -63,8 +63,10 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-6">
                         <div class="main-banner-content">
-                            <h1>Подними свой Английский на новый уровень</h1>
-                            <p>Все, что тебе надо - это делать больше, чем другие, знать больше, чем другие. Это будет выделять тебе из толпы и ты 100% станешь успешным</p>
+                            <h1>Подними свой английский - Заговори на английском за 2 месяца</h1>
+                            <p>Все мы очень занятые люди и понимая как ценно время, я придумал  уникальный курс с которым Все что вам нужно  это уделять по 10-15 мин в день на изучения и закрепления материала
+                                Теперь не надо смотреть часовые скучные уроки, и тратить огромные деньги на репетиров
+                                Если у вас есть желания получить реальный результат в английском языке- мой курс именно то что вам нужно</p>
                             <a href="#about" class="btn btn-primary btn-get-started">Get Started</a>
                             <a href="https://www.youtube.com/watch?v=5bO0aYjVpmo" class="btn btn-primary popup-youtube"><i class="icofont-ui-play"></i> Демо</a>
                         </div>
@@ -90,31 +92,22 @@
 <section id="about" class="about-area ptb-100">
     <div class="container">
         <div class="section-title">
-            <h3>Информация О Курсе</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <h3>Инфа О Курсе</h3>
+            <p>Максимально Интересно, понятно, эффективном и доступно, без какой либо воды. Ты не просто выучишь больше чем 300 слов, ты будешь знать, как правильно их произносить и где использовать </p>
         </div>
 
         <div class="row">
             <div class="col-lg-6 col-md-12">
                 <div class="about-content">
-                    <h3>We are branding strategy service from <span>2001</span> for our customers.</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <h3>Индивидуальный подход к каждому ученику </h3>
 
                     <ul class="pull-left">
-                        <li><i class="icofont-ui-check"></i> Creative Design</li>
-                        <li><i class="icofont-ui-check"></i> Retina Ready</li>
-                        <li><i class="icofont-ui-check"></i> Responsive Design</li>
-                        <li><i class="icofont-ui-check"></i> Creative Design</li>
+                        <li><i class="icofont-ui-check"></i> ТОННЫ полезного контента, который поможет тебе повысить свой уровень английского языка</li>
+                        <li><i class="icofont-ui-check"></i> Общение с единомышленниками, которые, так же как и ты, хотят выучить английский</li>
+                        <li><i class="icofont-ui-check"></i> Разговорный барьер будет разрушен</li>
+                        <li><i class="icofont-ui-check"></i> Уникальная методика изучения</li>
                     </ul>
 
-                    <ul>
-                        <li><i class="icofont-ui-check"></i> Modern Design</li>
-                        <li><i class="icofont-ui-check"></i> Awesome Design</li>
-                        <li><i class="icofont-ui-check"></i> Digital Marketing & Branding</li>
-                        <li><i class="icofont-ui-check"></i> Creative Design</li>
-                    </ul>
-
-                    <a href="#" class="btn btn-primary">Read More</a>
                 </div>
             </div>
 
