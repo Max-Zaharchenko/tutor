@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Webhooks;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Webhooks\TelegramWebhookRequest;
+use Illuminate\Support\Facades\Redis;
 
 class TelegramWebhookHandler extends Controller
 {
@@ -13,6 +14,12 @@ class TelegramWebhookHandler extends Controller
      */
     public function __invoke(TelegramWebhookRequest $request)
     {
-        logger($request->all());
+        if ($request->wantsToListenJoins()) {
+            Redis::command('SADD', ['join_listeners', $request->getChatId()]);
+        }
+
+        if ($request->wantsToLeaveJoins()) {
+            Redis::command('SREM', ['join_listeners', $request->getChatId()]);
+        }
     }
 }

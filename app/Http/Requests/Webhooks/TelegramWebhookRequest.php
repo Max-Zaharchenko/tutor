@@ -28,13 +28,33 @@ class TelegramWebhookRequest extends FormRequest
         ];
     }
 
+    /**
+     * Get the chat ID.
+     *
+     * @return mixed
+     */
     public function getChatId()
     {
-
+        return array_get($this->get('message'), 'chat.id');
     }
 
-    public function isSubscribingToJoins()
+    /**
+     * Determine whether the sender is subscriving to joins.
+     *
+     * @return bool
+     */
+    public function wantsToListenJoins()
     {
-        return array_get($this->get('result'), '');
+        return array_get($this->get('message'), 'text') === '/listenToJoins';
+    }
+
+    /**
+     * Determine whether the sender is unsubscriving to joins.
+     *
+     * @return bool
+     */
+    public function wantsToLeaveJoins()
+    {
+        return array_get($this->get('message'), 'text') == '/leaveJoins';
     }
 }
