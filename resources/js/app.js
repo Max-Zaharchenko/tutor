@@ -38,3 +38,37 @@ Vue.component('admin-call-show', require('./components/Admin/Calls/Show.vue'));
 const app = new Vue({
     el: '#app'
 });
+
+const subscribeAreaApp = new Vue({
+    el: '#subscribeArea',
+    data: {
+        errors: {},
+        form: {
+            name: '',
+            phone_number: '',
+            messenger: 'telegram',
+        }
+    },
+    methods: {
+        submitForm: function() {
+            this.errors = {};
+
+            axios.post('/api/join', this.form)
+                .then(r => {
+                    swal("Фая!", "Ваша заявка принята", "success");
+
+                    this.form = {};
+                })
+                .catch(e => {
+                    if (e.response.status == 422) {
+                        this.errors = e.response.data.errors;
+                    }
+
+                    $(".newsletter-form").addClass("animated shake");
+                    setTimeout(function() {
+                        $(".newsletter-form").removeClass("animated shake");
+                    }, 1000)
+                });
+        }
+    }
+});

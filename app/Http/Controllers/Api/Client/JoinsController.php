@@ -17,7 +17,7 @@ class JoinsController extends Controller
     public function store(JoinRequest $request)
     {
         $data = $request->validated();
-        $data['ip'] = $request->ip();
+        $data['ip_address'] = $request->ip();
 
         $this->interact(SubmitJoinRequestInteraction::class, [
             'data' => $data,

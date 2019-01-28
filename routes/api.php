@@ -13,4 +13,4 @@ use Illuminate\Http\Request;
 |
 */
 
-$router->post('/join', 'Api\Client\JoinsController@store');
+$router->post('/join', 'Client\JoinsController@store');

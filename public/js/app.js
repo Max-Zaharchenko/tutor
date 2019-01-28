@@ -26005,7 +26005,41 @@ Vue.component('admin-add-call-session', __webpack_require__(70));
 Vue.component('admin-call-show', __webpack_require__(73));
 
 var app = new Vue({
-  el: '#app'
+    el: '#app'
+});
+
+var subscribeAreaApp = new Vue({
+    el: '#subscribeArea',
+    data: {
+        errors: {},
+        form: {
+            name: '',
+            phone_number: '',
+            messenger: 'telegram'
+        }
+    },
+    methods: {
+        submitForm: function submitForm() {
+            var _this = this;
+
+            this.errors = {};
+
+            axios.post('/api/join', this.form).then(function (r) {
+                swal("Фая!", "Ваша заявка принята", "success");
+
+                _this.form = {};
+            }).catch(function (e) {
+                if (e.response.status == 422) {
+                    _this.errors = e.response.data.errors;
+                }
+
+                $(".newsletter-form").addClass("animated shake");
+                setTimeout(function () {
+                    $(".newsletter-form").removeClass("animated shake");
+                }, 1000);
+            });
+        }
+    }
 });
 
 /***/ }),

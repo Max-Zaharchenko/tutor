@@ -4,6 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -300,7 +301,7 @@
 <!-- End Pricing Area -->
 
 <!-- Start Subscribe Area-->
-<section class="subscribe-area ptb-100">
+<section class="subscribe-area ptb-100" id="subscribeArea">
 
     <div class="bg-top"></div>
     <div class="bg-bottom"></div>
@@ -310,11 +311,17 @@
             <div class="col-lg-12 col-md-12">
                 <div class="newsletter">
                     <h4>Заполните форму и Зак лично вам передзвонит</h4>
-                    <form class="newsletter-form" data-toggle="validator">
-                        <input type="text" class="form-control" placeholder="Имя" name="name" required autocomplete="off">
-                        <input type="text" class="form-control mt-2" placeholder="Номер Телефона" name="phone_number" required autocomplete="off">
-                        <button class="btn btn-primary" type="submit">Subscribe</button>
-                        <div id="validator-newsletter" class="form-result"></div>
+                    <form class="newsletter-form" data-toggle="validator" v-on:submit.prevent="submitForm">
+                        <input type="text" class="form-control" placeholder="Имя" v-model="form.name" name="name" required autocomplete="off">
+                        <input type="text" class="form-control mt-2" placeholder="Номер Телефона" v-model="form.phone_number" name="phone_number" required autocomplete="off">
+                        <select name="messenger" id="messenger" class="form-control mt-2" required>
+                            <option value="telegram">Telegram</option>
+                            <option value="whatsapp">WhatsApp</option>
+                            <option value="viber">Viber</option>
+                            <option value="facebook_messenger">Facebook Messenger</option>
+                        </select>
+                        <div id="validator-newsletter" class="validation-danger" v-for="error in errors">@{{ error[0] }}</div>
+                        <button class="btn btn-primary" type="submit">Отправить</button>
                     </form>
                 </div>
             </div>
@@ -379,6 +386,8 @@
 
 <!-- Start of HubSpot Embed Code -->
 <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/5382756.js"></script>
+<script src="{{ asset('js/app.js') }}"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <!-- End of HubSpot Embed Code -->
 </body>
 </html>
