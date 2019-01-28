@@ -11,14 +11,17 @@ class SendJoinToTelegramChannel implements ShouldQueue
 {
     public function handle(JoinReceived $event)
     {
-        $chatIDs = Redis::command('SMEMBERS', ['join_listeners']);
+        $join = $event->join;
 
+        $chatIDs = Redis::command('SMEMBERS', ['join_listeners']);
         $guzzleClient = new Client();
 
         foreach ($chatIDs as $chatID) {
             $guzzleClient->post('https://api.telegram.org/bot723982235:AAGj92dbbmISDriufZ868o3UtmzPgwjhmF0/sendMessage', [
-                'chat_id' => $chatID,
-                'text'    => 'A new subscriber has been added.',
+                'form_params' => [
+                    'chat_id' => $chatID,
+                    'text'    => sprintf('%s with %s phone number wants to contact via %s', $join->name, $join->phone_number, $join->messenger),
+                ]
             ]);
         }
     }
