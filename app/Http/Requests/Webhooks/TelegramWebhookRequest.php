@@ -53,8 +53,8 @@ class TelegramWebhookRequest extends FormRequest
      *
      * @return bool
      */
-    public function wantsToLeaveJoins()
+    public function wantsToMuteJoins()
     {
-        return array_get($this->get('message'), 'text') == '/leaveJoins';
+        return array_get($this->get('message'), 'text') == '/muteJoins';
     }
 }

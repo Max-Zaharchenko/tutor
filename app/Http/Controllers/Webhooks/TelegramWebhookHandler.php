@@ -18,7 +18,7 @@ class TelegramWebhookHandler extends Controller
             Redis::command('SADD', ['join_listeners', $request->getChatId()]);
         }
 
-        if ($request->wantsToLeaveJoins()) {
+        if ($request->wantsToMuteJoins()) {
             Redis::command('SREM', ['join_listeners', $request->getChatId()]);
         }
     }
