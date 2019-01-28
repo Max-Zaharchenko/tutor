@@ -2,6 +2,7 @@
 
 namespace App\Interactions\Joins;
 
+use App\Events\Joins\JoinReceived;
 use App\Models\Join;
 
 class SubmitJoinRequestInteraction
@@ -14,6 +15,8 @@ class SubmitJoinRequestInteraction
      */
     public function handle(array $data = [])
     {
-        return Join::create($data);
+        return tap(Join::create($data), function ($join) {
+            event(new JoinReceived($join));
+        });
     }
 }

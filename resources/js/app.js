@@ -57,7 +57,9 @@ const subscribeAreaApp = new Vue({
                 .then(r => {
                     swal("Фая!", "Ваша заявка принята", "success");
 
-                    this.form = {};
+                    this.form = {
+                        messenger: 'telegram'
+                    };
                 })
                 .catch(e => {
                     if (e.response.status == 422) {
