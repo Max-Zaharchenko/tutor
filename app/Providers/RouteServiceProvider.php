@@ -47,6 +47,8 @@ class RouteServiceProvider extends ServiceProvider
 
         $this->mapWebRoutes();
 
+        $this->mapWebhookRoutes();
+
         //
     }
 
@@ -87,5 +89,19 @@ class RouteServiceProvider extends ServiceProvider
             ->middleware(['api', 'auth:api', 'role:admin'])
             ->namespace($this->namespace . '\Api\Admin')
             ->group(base_path('routes/admin-api.php'));
+    }
+
+    /**
+     * Define the "webhooks" routes for the application.
+     *
+     * These routes are typically stateless.
+     *
+     * @return void
+     */
+    protected function mapWebhookRoutes()
+    {
+        Route::prefix('webhooks')
+            ->namespace($this->namespace . '\Webhooks')
+            ->group(base_path('routes/webhooks.php'));
     }
 }
