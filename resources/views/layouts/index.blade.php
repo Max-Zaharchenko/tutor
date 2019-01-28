@@ -314,7 +314,7 @@
                     <form class="newsletter-form" data-toggle="validator" v-on:submit.prevent="submitForm">
                         <input type="text" class="form-control" placeholder="Имя" v-model="form.name" name="name" required autocomplete="off">
                         <input type="text" class="form-control mt-2" placeholder="Номер Телефона" v-model="form.phone_number" name="phone_number" required autocomplete="off">
-                        <select name="messenger" id="messenger" class="form-control mt-2" required>
+                        <select name="messenger" id="messenger" v-model="form.messenger" class="form-control mt-2" required>
                             <option value="telegram">Telegram</option>
                             <option value="whatsapp">WhatsApp</option>
                             <option value="viber">Viber</option>
