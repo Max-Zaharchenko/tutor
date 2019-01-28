@@ -11,16 +11,9 @@
 |
 */
 
-\Illuminate\Support\Facades\Auth::routes();
-
-//$router->get('/mailable', function () {
-//    return new \App\Mail\Students\Invite(\App\Models\Invite::first());
-//});
+//\Illuminate\Support\Facades\Auth::routes();
 
 $router->get('/', 'Client\Index\IndexController@index')->name('index.index');
-
-$router->get('/join', 'Client\Students\JoinController@show')->name('client.students.showJoinForm');
-$router->post('/join', 'Client\Students\JoinController@store')->name('client.students.join');
 
 $router->group(['middleware' => 'auth'], function () use ($router) {
     $router->get('/home', 'HomeController@index')->name('home');

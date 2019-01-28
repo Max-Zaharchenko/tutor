@@ -1592,8 +1592,6 @@ p {
 }
 
 .newsletter form .btn {
-  position: absolute;
-  right: 7px;
   border-radius: 30px;
   top: 8px;
   height: 60px;
