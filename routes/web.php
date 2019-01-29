@@ -11,7 +11,7 @@
 |
 */
 
-//\Illuminate\Support\Facades\Auth::routes();
+\Illuminate\Support\Facades\Auth::routes(['register' => false]);
 
 $router->get('/', 'Client\Index\IndexController@index')->name('index.index');
 
