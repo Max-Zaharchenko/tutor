@@ -25,6 +25,7 @@ class JoinRequest extends FormRequest
     {
         return [
             'name'           => ['required', 'string'],
+            'email'          => ['required', 'email'],
             'phone_number'   => ['required', 'string'],
             'messenger'      => ['required', 'string', 'in:viber,whatsapp,telegram,facebook_messenger'],
         ];
