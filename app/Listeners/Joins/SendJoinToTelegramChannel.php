@@ -20,7 +20,7 @@ class SendJoinToTelegramChannel implements ShouldQueue
             $guzzleClient->post('https://api.telegram.org/bot723982235:AAGj92dbbmISDriufZ868o3UtmzPgwjhmF0/sendMessage', [
                 'form_params' => [
                     'chat_id' => $chatID,
-                    'text'    => sprintf("A new user signed up: \nName: %s \nEmail: %s Phone Number: \nMessenger: %s", $join->name, $join->email, $join->phone_number, $join->messenger),
+                    'text'    => sprintf("A new user signed up: \nName: %s \nEmail: %s Phone Number: %s \nMessenger: %s", $join->name, $join->email, $join->phone_number, $join->messenger),
                 ]
             ]);
         }
