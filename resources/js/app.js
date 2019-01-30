@@ -45,6 +45,7 @@ const subscribeAreaApp = new Vue({
         errors: {},
         form: {
             name: '',
+            email: '',
             phone_number: '',
             messenger: 'telegram',
         }
